@@ -1,0 +1,40 @@
+.lema-best-selling {
+		background-color: rgba(0, 0, 0, 0.6);
+		color: #fff;
+		font-family: Montserrat;
+		font-weight: 600;
+		display: inline-block;
+		vertical-align: top;
+		padding: 9px 15px 8px 15px;
+		border-radius: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	    border-top-left-radius: 8px;
+    	border-bottom-left-radius: 0;
+	}
+
+	/*.lema-best-selling:before {
+ 	   	content: "";
+	    position: absolute;
+	    width: 0;
+	    height: 0;
+	    border-top: 64px solid #8dd64f;
+	    border-right: 64px solid transparent;
+	    top: 0;
+	    right: -40px;
+	    z-index: -1;
+	}
+
+	.lema-best-selling:after {
+		content: "";
+	    position: absolute;
+	    width: 0;
+	    height: 0;
+	    border-bottom: 64px solid #8dd64f;
+	    border-right: 64px solid transparent;
+	    top: 0;
+	    right: -40px;
+	    z-index: -1;
+	}*/

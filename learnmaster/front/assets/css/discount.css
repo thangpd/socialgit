@@ -1,0 +1,31 @@
+.lema-discount .price del {
+	font-size: 14px;
+	text-align: left;
+	color: #6f6e72;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.lema-discount .price span {
+	font-size: 14px;
+	text-align: left;
+	color: #333146;
+}
+
+.lema-discount .time-sale {
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	color: #8dd64f;
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+}
+
+.lema-discount .time-sale span {
+	font-size: 11px;
+	text-align: left;
+	color: #d53939;
+	display: block;
+	margin-top: 5px;
+}

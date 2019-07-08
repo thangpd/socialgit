@@ -1,0 +1,118 @@
+/*=============================================
+=            Course category block            =
+=============================================*/
+.lema-course-block-list .course-block {
+  text-align: center;
+}
+
+.lema-course-block-list .course-block .icon-cell {
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.lema-course-block-list .course-block .icon-cell:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #8DD64F;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.lema-course-block-list .course-block .icon-cell .lema-icon {
+  font-size: 40px;
+  color: #333146;
+}
+
+.lema-course-block-list .course-block .content-cell .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.lema-course-block-list .course-block .content-cell .title a {
+  color: #333146;
+}
+
+.lema-course-block-list .course-block .content-cell .title a:hover {
+  color: #8DD64F;
+}
+
+/*=====  End of Course category block  ======*/
+/*=============================================================
+=            Course category block carousel option            =
+=============================================================*/
+.lema-course-category-carousel {
+  position: relative;
+}
+
+.lema-course-category-carousel .item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.lema-course-category-carousel .item :focus {
+  outline: none;
+}
+
+.lema-course-category-carousel > .lema-columns {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.lema-course-category-carousel .lema-btn {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  z-index: 10;
+  font-size: 0px;
+  border: none;
+  text-align: center;
+  border-radius: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 3px 14px 0 rgba(184, 184, 184, 0.4);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.lema-course-category-carousel .lema-btn:before {
+  font-family: 'Ionicons';
+  font-size: 18px;
+  color: #333146;
+}
+
+.lema-course-category-carousel .lema-btn.prev {
+  left: -40px;
+}
+
+.lema-course-category-carousel .lema-btn.prev:before {
+  content: "\f3d2";
+}
+
+.lema-course-category-carousel .lema-btn.next {
+  right: -40px;
+}
+
+.lema-course-category-carousel .lema-btn.next:before {
+  content: "\f3d3";
+}
+
+/*=====  End of Course category block carousel option  ======*/

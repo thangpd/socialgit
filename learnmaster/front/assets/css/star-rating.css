@@ -1,0 +1,89 @@
+.lema-star-rating {
+
+}
+
+.rating { 
+	border: none;
+}
+
+.lema-star-rating fieldset {
+	margin: 0;
+	padding: 0;
+	height: 30px;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+	margin: 5px 2px;
+	font-size: 14px;
+	font-family: FontAwesome;
+	display: inline-block;
+	content: "\f005";
+}
+
+.rating > .half:before { 
+	/*content: "\f089";
+	position: absolute;*/
+}
+
+.rating > label { 
+	color: #ddd; 
+	float: none; 
+	font-size: 14px;
+	display: inline-block;
+}
+
+.lema-star-rating .view-star {
+	color: #233142;
+	font-weight: 700;
+	font-size: 16px;
+	display: block;
+}
+
+.lema-star-rating .view-star span {
+	font-family: Montserrat;
+	font-size: 11px;
+	text-align: left;
+	color: #858585;
+	margin-left: 5px;
+}
+
+/*===================================
+=            Rating view            =
+===================================*/
+
+.lema-star-rating {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.lema-star-rating.view-only .bg-rate {
+  display: inline-block;
+  font-size: 16px;
+  overflow: hidden;
+  position: relative;
+  letter-spacing: 0px;
+}
+.lema-star-rating.view-only .bg-rate:before {
+  font-family: "FontAwesome";
+  content: "\f006\f006\f006\f006\f006";
+  color: #CCCCCC;
+}
+.lema-star-rating.view-only .rating {
+  display: inline-block;
+  font-size: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 0;
+  top: 0;
+  letter-spacing: 0px;
+}
+.lema-star-rating.view-only .rating:after {
+  color: #FFDA21;
+  font-family: 'FontAwesome';
+  content: "\f005\f005\f005\f005\f005";
+}
+
+
+/*=====  End of Rating view  ======*/

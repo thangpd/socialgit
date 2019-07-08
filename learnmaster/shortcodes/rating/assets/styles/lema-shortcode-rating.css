@@ -1,0 +1,146 @@
+/*progress rating*/
+/****** Style Star Rating Widget *****/
+
+.lema-rating-content {
+    border: none;
+    float: left;
+}
+
+.lema-rating-content > input { display: none; }
+.lema-rating-content > label:before, .lema-rate-start > label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+
+.lema-rating-content > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.lema-rating-content > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.lema-rating-content > input:checked ~ label, /* show gold star when clicked */
+.lema-rating-content:not(:checked) > label:hover, /* hover current star */
+.lema-rating-content:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.lema-rating-content > input:checked + label:hover, /* hover current star when changing rating */
+.lema-rating-content > input:checked ~ label:hover,
+.lema-rating-content > label:hover ~ input:checked ~ label, /* lighten current selection */
+.lema-rating-content > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+.lema-rating-content label.active, .lema-rate-start > label.active { color: #FFED85;  }
+.lema-rate-start > label:before{
+    font-size: 15px;
+    margin: 2px;
+}
+.lema-rate-start > label{
+    float: left;
+    color: #ddd;
+    margin-bottom: 0;
+}
+.lema-rating .lema-rating-value{
+    font-size: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-left: 0;
+}
+.lema-rating.lema-rating-full .lema-rating-statistic{
+    width: 35%;
+    float: left;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.lema-rating.lema-rating-full .lema-rating-details{
+    width: 65%;
+    float: left;
+}
+.lema-rating.lema-rating-full .lema-rating-content{
+    text-align: center;
+    margin: 0px auto;
+    float: none;
+    display: initial;
+    padding: 0;
+}
+.lema-rating.lema-rating-full .lema-rating-total{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0px;
+}
+.lema-rating-progress-container{
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    background: #ddd;
+}
+.lema-rating-progress{
+    background: #46c1ff;
+    display: inline-block;
+    height: 25px;
+}
+
+/*star css*/
+.lema-star-rating {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.lema-star-rating.view-only .bg-rate {
+  display: inline-block;
+  font-size: 16px;
+  overflow: hidden;
+  position: relative;
+  letter-spacing: 3px;
+}
+.lema-star-rating.view-only .bg-rate:before {
+  font-family: "FontAwesome";
+  content: "\f006\f006\f006\f006\f006";
+  color: #CCCCCC;
+}
+.lema-star-rating.view-only .rating {
+    display: inline-block;
+    font-size: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 0;
+    top: 0;
+    letter-spacing: 3px;
+    height: 20px;
+}
+.lema-star-rating.view-only .rating:after {
+  color: #FFDA21;
+  font-family: 'FontAwesome';
+  content: "\f005\f005\f005\f005\f005";
+}
+
+.lema-rating-content label:hover {
+    cursor: pointer;
+}
+.lema-rating.lema-rating-simple{
+  text-align: center;
+}
+
+.lema-rating-content{
+    float: none;
+    margin: 0px auto;
+    text-align: center;
+    width: auto;
+    display: initial;
+}
+.lema-rating-content label {
+    text-align: center;
+    font-size: 40px;
+}

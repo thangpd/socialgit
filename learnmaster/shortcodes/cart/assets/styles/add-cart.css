@@ -1,0 +1,24 @@
+.lema-num:empty {
+  display: none;
+}
+
+.lema-num{
+  padding: 2px 6px;
+  background: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+
+.lema-btn-cart {
+  width: 190px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  background-color: #07d79b;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+}

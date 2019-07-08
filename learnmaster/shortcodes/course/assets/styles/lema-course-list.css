@@ -1,0 +1,7 @@
+.link_page{
+    padding: 5px 10px;
+    margin:5px;
+}
+.link_page[disabled]{
+    opacity: 0.3;
+}

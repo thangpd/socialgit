@@ -1,0 +1,40 @@
+.lema-bundle-list .lema-row {
+    margin: 0;
+  }
+  .lema-bundle-list .lema-row .lema-bundle-all {
+    display: flex;
+    flex-flow: wrap;
+
+  }
+  .lema-bundle-list .center {
+    text-align: center;
+  }
+  .lema-bundle-list .center .link_page {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #868686;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    padding: 0;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .lema-bundle-list .center .link_page[disabled], .lema-bundle-list .center .link_page:hover {
+    background-color: #07d79b;
+    color: white;
+    opacity: 1;
+  }
+  .lema-bundle-list .center{
+    text-align: center;
+  }
+  .lema-bundle-list .center .link_page + .link_page {
+    margin-left: 10px;
+  }
+  .lema-bundle-list .item{
+    margin-bottom: 20px;
+  }

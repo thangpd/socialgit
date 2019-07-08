@@ -1,0 +1,214 @@
+.lema-login-register-modal {
+  font-family: "Montserrat", sans-serif;
+}
+
+.lema-login-register-modal .modal-dialog {
+  width: 570px;
+  height: 100vh;
+  margin: 0 auto;
+  display: table;
+}
+
+.lema-login-register-modal .modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.lema-login-register-modal .modal-container {
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.lema-login-register-modal ul.nav-tabs {
+  border: none;
+}
+
+.lema-login-register-modal ul.nav-tabs li {
+  width: 50%;
+}
+
+.lema-login-register-modal ul.nav-tabs li.tab-login a {
+  border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  -webkit-border-radius: 10px 0 0 0;
+}
+
+.lema-login-register-modal ul.nav-tabs li.tab-register a {
+  border-radius: 0 10px 0 0;
+  -moz-border-radius: 0 10px 0 0;
+  -webkit-border-radius: 0 10px 0 0;
+}
+
+.lema-login-register-modal ul.nav-tabs li a {
+  margin: 0;
+  color: #ddd;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5556;
+  background-color: #f6f6f6;
+  border: 2px solid #eef1f7;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+.lema-login-register-modal ul.nav-tabs li:hover a {
+  border: 2px solid #eef1f7;
+}
+
+.lema-login-register-modal ul.nav-tabs li.active a {
+  color: #333146;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.lema-login-register-modal .tab-content {
+  font-size: 14px;
+  padding: 60px 125px;
+}
+
+.lema-login-register-modal .btn-wrapper {
+  position: relative;
+  color: #fff;
+}
+
+.lema-login-register-modal .btn-wrapper + .btn-wrapper {
+  margin-top: 20px;
+}
+
+.lema-login-register-modal .btn-wrapper .icons {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.lema-login-register-modal .login-btn,
+.lema-login-register-modal .register-btn {
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: 1px;
+  padding: 17px 30px 17px 60px;
+}
+
+.lema-login-register-modal .login-btn.btn-google,
+.lema-login-register-modal .register-btn.btn-google {
+  background-color: #d73d32;
+}
+
+.lema-login-register-modal .login-btn.btn-facebook,
+.lema-login-register-modal .register-btn.btn-facebook {
+  background-color: #365899;
+}
+
+.lema-login-register-modal .or {
+  color: #afafaf;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.lema-login-register-modal .input-wrapper + .input-wrapper {
+  margin-top: 20px;
+}
+
+.lema-login-register-modal .form-control {
+  height: auto;
+  color: #28313b;
+  font-weight: 500;
+  padding: 17px 15px;
+  border: 2px solid #dadfea;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.lema-login-register-modal .form-control:focus {
+  border-color: #8dd64f;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.lema-login-register-modal .form-control::-webkit-input-placeholder {
+  color: #ddd;
+  font-weight: 400;
+}
+
+.lema-login-register-modal .form-control::-moz-placeholder {
+  color: #ddd;
+  font-weight: 400;
+}
+
+.lema-login-register-modal .form-control:-ms-input-placeholder {
+  color: #ddd;
+  font-weight: 400;
+}
+
+.lema-login-register-modal .form-control:-moz-placeholder {
+  color: #ddd;
+  font-weight: 400;
+}
+
+.lema-login-register-modal .form-control.btn-submit {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-color: #8dd64f;
+  background-color: #8dd64f;
+}
+
+.lema-login-register-modal .login-register-form + .login-register-help {
+  margin-top: 25px;
+}
+
+.lema-login-register-modal .login-register-help {
+  text-align: center;
+}
+
+.lema-login-register-modal .login-register-help .text {
+  color: #6f6e72;
+}
+
+.lema-login-register-modal .login-register-help .text + .link {
+  margin-left: 10px;
+}
+
+.lema-login-register-modal .login-register-help .had-account + .accepted-note {
+  margin-top: 15px;
+}
+
+.lema-login-register-modal .login-register-help .description {
+  color: #afafaf;
+  margin-bottom: 0;
+}
+
+.llema-login-register-modal .login-register-help .description .link {
+  font-weight: 400;
+}
+
+.lema-login-register-modal .login-register-help .link {
+  color: #8dd64f;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.lema-login-register-modal .login-register-help .link:hover {
+  text-decoration: underline;
+}
+
+.lema-login-register-modal .login-register-help .forgot-pass + .if-register {
+  margin-top: 10px;
+}

@@ -1,0 +1,336 @@
+/*Bundle card*/
+  .lema-shortcode-lema_bundlecard {
+      /* min-width: 300px;
+      max-width: 750px; */
+      font-family: "Nunito Sans", sans-serif;
+    }
+    
+  .lema-shortcode-lema_bundlecard .bundle-item {
+    display: block;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    height: 100%;
+    background-color: white;
+    border-radius: 3px;
+    -webkit-box-shadow: -0.2px 3px 16px 0 #ebebeb;
+    box-shadow: -0.2px 3px 16px 0 #ebebeb;
+    border: solid 1px rgba(232, 232, 232, 0.54);
+    font-size: 14px;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item:hover {
+    box-shadow: 1px 2px 11px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    border-radius: 3px;
+    border: 0;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper:hover .bundle-image-wrapper:hover a::before {
+    background-color: rgba(45, 125, 250, 0.9);
+    opacity: 1;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper:hover .button.lema-view-add {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .bundle-image-wrapper {
+    position: relative;
+    height: 178px;
+    max-height: 178px;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .bundle-image-wrapper a.link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    border-radius: 3px 3px 0 0;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .bundle-image-wrapper a.link img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: #07d79b;
+    border-radius: 3px 3px 0 0;
+    width: 100%;
+    box-shadow: none;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .lema-label.lema-best-selling {
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #07d79b;
+    color: white;
+    width: 100px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 3px 0 0 0;
+    letter-spacing: 0.5px;
+    padding: 0;
+    position: absolute;
+    top: 37px;
+    right: -37px;
+    left: auto;
+    -webkit-transform: rotate(90deg) translateZ(0);
+    -ms-transform: rotate(90deg) translateZ(0);
+    transform: rotate(90deg) translateZ(0);
+    text-transform: uppercase;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .button.lema-view-add {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .button.lema-view-add .lema-btn-cart,
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .button.lema-view-add .lema-course-bookmark {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #868686;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    background: white;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .button.lema-view-add .lema-btn-cart:hover,
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .button.lema-view-add .lema-course-bookmark:hover {
+    background: #07d79b;
+    color: white;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .button.lema-view-add .lema-btn-cart i,
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .button.lema-view-add .lema-course-bookmark i {
+    width: inherit;
+    height: inherit;
+    display: grid;
+    place-items: center;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .button.lema-view-add .lema-btn-cart {
+    order: 2;
+    margin-left: 8px;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .button.lema-view-add .lema-course-bookmark {
+    order: 1;
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .top-wrapper .button.lema-view-add .lema-course-bookmark.lema-discount {
+    margin-top: 15px;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper {
+    position: relative;
+    padding: 18px 24px 0 24px;
+    margin-top: -28px;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper .lema-button-category {
+    position: relative;
+    z-index: 4;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper .lema-button-category .button.bundle {
+    font-family: "Roboto", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    color: white;
+    background-color: #ff9142;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 3px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper .title-bundle {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper .title-bundle a {
+    overflow: hidden !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #42495b;
+    line-height: 1.3;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper .title-bundle a:hover {
+    color: #07d79b;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper .lema-bundle-authors {
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper .description-bundle{
+    font-size: 16px;
+    text-align: left;
+    color: #858585;
+    /* font-family: Lato; */
+  }
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper .lema-bundle-authors .lema-author .image-thumb:hover span {
+    color: #07d79b;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper .lema-bundle-authors .lema-author .image-thumb span {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #868686;
+    text-transform: capitalize;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper .lema-bundle-authors .lema-author .image-thumb img.avatar {
+    display: inline-block !important;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .middle-wrapper.bundle-content-wrapper .lema-bundle-authors .lema-author .image-thumb img.avatar + span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .bottom-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding: 24px;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .bottom-wrapper .lema-course-bookmark-quantity {
+    display: inline-flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    padding-right: 14px;
+  }
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .bottom-wrapper .lema-bundle-num-view{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .bottom-wrapper .lema-bundle-num-view i.fa, .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .bottom-wrapper .lema-course-bookmark-quantity i.fa {
+    margin-right: 5px;
+    line-height: 1.7;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .bottom-wrapper .bundle-price-block.lema-discount {
+    order: 3;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .bottom-wrapper .bundle-price-block.lema-discount.list .price {
+    float: left;
+    margin-right: 8px;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .bottom-wrapper .bundle-price-block.lema-discount .price del {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: #6f6e72;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .lema-shortcode-lema_bundlecard .bundle-item .bundle-wrapper .bottom-wrapper .bundle-price-block.lema-discount .time-sale {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #333333;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    color: #07d79b;
+    font-size: 22px;
+    order: 1;
+  }
+  
+  /*===========*/
+  

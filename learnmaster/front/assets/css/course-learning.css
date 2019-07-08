@@ -1,0 +1,1585 @@
+/*================================
+=            CSS temp            =
+================================*/
+
+.lema-curriculum-page {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #FFFFFF;
+}
+
+.lema-lecture-view .lema-learning-content {
+    display: none;
+}
+
+.lema-lecture-view .lema-learning-content.active {
+    display: block;
+}
+
+
+/*=====  End of CSS temp  ======*/
+
+
+/*==============================================
+=            curriculum page layout            =
+==============================================*/
+
+video::-webkit-slider-thumb,
+video::-moz-range-track,
+video::-moz-range-thumb,
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+.lema-curriculum-page {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar {
+    width: 480px;
+    position: fixed;
+    height: 100%;
+    z-index: 2147483649 !important;
+    left: -480px;
+    top: 0;
+    background-color: #FFFFFF;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.admin-bar .lema-curriculum-page .lema-curriculum-navbar{
+    top:32px;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .lema-topbar {
+    padding: 16px 24px;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .lema-topbar .lema-link {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: #42495b;
+    text-transform: uppercase;
+}
+
+
+.lema-curriculum-page .lema-curriculum-navbar .lema-topbar .lema-link i.fa{
+    margin-right: 5px;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .lema-curriculum-content {
+    height: 90%;
+    height: -webkit-calc(100% - 50px);
+    height: calc(100% - 50px);
+    overflow: auto;
+    padding: 0px 0px 16px;
+}
+
+.lema-curriculum-page .lema-chapter-heading {
+    position: relative;
+    cursor: pointer;
+    padding: 16px 24px 16px;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.lema-curriculum-page .lema-chapter-heading .top {
+    padding-bottom: 10px;
+    position: relative;
+    
+}
+
+.lema-curriculum-page .lema-chapter-heading .top:before {
+    content: "";
+    display: table;
+}
+
+.lema-curriculum-page .lema-chapter-heading .top:after {
+    content: "";
+    display: table;
+    clear: both;
+    position: relative;
+    
+}
+
+.lema-curriculum-page  .lema-chapter-heading .lema-chapter-title {
+    font-weight: bold;
+    float: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: relative;
+    padding-right: 35px;
+}
+
+.lema-curriculum-page  .lema-chapter-heading .top .lema-total-lesson-num {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+    text-align: right;
+}
+
+.lema-curriculum-page .lema-chapter-heading  .lema-total-lesson-num .curr {
+    color: #8DD64F;
+}
+
+.lema-curriculum-page .lema-chapter-heading .lm-main {
+    position: static;
+    padding-right: 30px;
+}
+
+.lema-curriculum-page  .lema-chapter-heading .lm-main .lema-chapter-desc {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.lema-curriculum-page  .lema-chapter-heading .lema-collapse-btn {
+    position: absolute;
+    font-size: 0px;
+    border: none;
+    background-color: transparent;
+    right: 15px;
+    top: 30px;
+    z-index: 10;
+    color: #8DD64F;
+}
+
+.lema-curriculum-page  .lema-chapter-heading .lema-collapse-btn:before {
+    font-family: 'FontAwesome';
+    content: "\f067";
+    font-size: 16px;
+}
+
+.lema-curriculum-page .lema-curriculum-chapter.lema-collapsed .lema-chapter-heading .lema-collapse-btn:before {
+    content: "\f068";
+}
+
+.lema-curriculum-body {
+    display: none;
+}
+.lema-collapsed .lema-curriculum-body {
+    display: block!important;
+}
+
+.lema-curriculum-page .lema-curriculum-body {
+    padding: 0px 0;
+    position: relative;
+}
+
+.lema-curriculum-page .lema-curriculum-lesson {
+    padding: 0;
+    margin-bottom: 0;
+    border-top: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.lema-curriculum-page .lema-curriculum-lesson.learning .lema-lesson-heading {
+    background-color: #8DD64F;
+    color: #FFFFFF;
+}
+
+.lema-curriculum-page .lema-curriculum-lesson.learning .lema-lesson-heading .lema-lesson-title {
+    color: #FFFFFF;
+}
+
+.lema-curriculum-page .lema-curriculum-lesson.learning .lema-lesson-heading .lema-icon-type {
+    color: #FFFFFF;
+}
+
+.lema-curriculum-page .lema-curriculum-lesson:hover {
+    background-color: #f6f6f6;
+}
+.lema-icon-check:hover{
+    cursor: pointer;
+}
+.lema-curriculum-page .lema-curriculum-lesson .lema-icon-check {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    z-index: 10;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid #bbbbbb;
+    left: 24px;
+    top: 16px;
+    background-color: #FFFFFF;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.lema-curriculum-page .lema-curriculum-lesson .lema-icon-check:before {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    font-size: 9px;
+    display: block;
+    text-align: center;
+    line-height: 16px;
+    color: #FFFFFF;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.lema-curriculum-page .lema-curriculum-lesson .lema-icon-check.disabled:before {
+    color: #6f6e72;
+
+}
+.lema-curriculum-page .lema-curriculum-lesson .lema-icon-check.active:before {
+    color: #ffffff;
+}
+.lema-icon-check.disabled, .lema-icon-check:disabled{
+    opacity: .2;
+}
+.lema-curriculum-page .lema-curriculum-lesson.learning .lema-icon-check.disabled:before {
+    content: "\f00c";
+}
+
+.lema-curriculum-page .lema-curriculum-lesson .lema-icon-check.active:before {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.lema-curriculum-page .lema-curriculum-lesson .lema-lesson-heading {
+    position: relative;
+    padding: 16px 24px 20px 32px;
+}
+
+.lema-curriculum-page .lema-lesson-heading .lema-lesson-title {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 70px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333146;
+}
+
+.lema-curriculum-page .lema-lesson-heading .duration {
+    position: absolute;
+    right: 24px;
+    top: 16px;
+    display: inline-block;
+}
+
+.lema-curriculum-page .lema-curriculum-lesson.video .lema-lesson-title:before {
+    font-family: 'FontAwesome';
+    content: "\f1c8";
+    font-size: 14px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: #6F6E72;
+}
+
+.lema-curriculum-page .lema-curriculum-lesson.article  .lema-lesson-title:before {
+    font-family: 'FontAwesome';
+    content: "\f0f6";
+    font-size: 14px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: #6F6E72;
+}
+
+.lema-curriculum-page .lema-curriculum-lesson.quiz .lema-lesson-title:before {
+    font-family: 'FontAwesome';
+    content:"\f29c";
+    font-size: 15px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: #6F6E72;
+}
+.lema-curriculum-page .lema-curriculum-lesson.audio .lema-lesson-title:before {
+    font-family: 'FontAwesome';
+    content: "\f1c7";
+    font-size: 14px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: #6F6E72;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .lema-curriculum-sidebar-control-st {
+    position: absolute;
+    left: 100%;
+    z-index: 10;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .btn-sidebar {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    padding: 6px;
+    font-size: 20px;
+    color: #8DD64F;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .btn-sidebar:before {
+    content: "\f0ca";
+    font-family: 'FontAwesome';
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .lema-popover {
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    width: 230px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid #ececec;
+    box-shadow: 3px 15px 20px 0 rgba(0, 0, 0, 0.05);
+    padding: 12px 20px 12px 20px;
+    font-size: 14px;
+    top: 0;
+    left: 100%;
+    margin-left: 20px;
+    color: #6F6E72;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .lema-popover:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    width: 0;
+    margin-top: -10px;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 9px 10px 0;
+    border-color: transparent #ececec transparent transparent;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .lema-popover:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    width: 0;
+    margin-top: -8px;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 8px 0;
+    border-color: transparent #FFFFFF transparent transparent;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .lema-popover .inner {
+    position: relative;
+    padding-left: 26px;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .lema-popover .inner:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    color: #8DD64F;
+}
+
+.lema-curriculum-page .lema-curriculum-navbar .lema-popover .btn-close {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    z-index: 10;
+    border: none;
+    color: #6F6E72;
+    background-color: transparent;
+    padding: 0px;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.lema-curriculum-page.lema-navbar-open .lema-curriculum-navbar {
+    left: 0;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.lema-curriculum-page.lema-navbar-open .btn-sidebar:before {
+    content: "\f00d";
+}
+
+.lema-curriculum-page .lema-lecture-view {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.lema-curriculum-page .lema-lecture-view .lema-video-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+}
+
+.lema-curriculum-page .lema-video-wrapper .lema-top-heading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px 64px;
+    z-index: 10;
+    background-color: transparent;
+    color: #FFFFFF;
+
+}
+
+.lema-curriculum-page .lema-video-wrapper.video-play .lema-top-heading-bar {
+    visibility: hidden;
+    opacity: 0;
+}
+.lema-curriculum-page .lema-video-wrapper.video-play.hovering .lema-top-heading-bar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.lema-curriculum-page .lema-video-wrapper .lema-top-heading-bar .lema-lesson-title {
+    color: #FFFFFF;
+}
+
+.lema-curriculum-page .lema-lecture-view .lema-video-wrapper .lema-video-view {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.lema-video-wrapper .video-js {
+    position: relative !important;
+    width: 100% !important;
+    height: 100%!important;
+}
+
+.lema-video-wrapper .vjs-poster {
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.lema-curriculum-page.lema-navbar-open .lema-lecture-view {
+    padding-left: 480px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.lema-curriculum-page.lema-navbar-open .lema-article-controls-bar {
+    padding-left: 520px;
+}
+
+.lema-curriculum-page .lema-video-controls-bar {
+    position: absolute;
+    z-index: 2147483647 !important;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-left {
+    position: relative;
+    float: left;
+    width: 80px;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-left .lema-btn-play {
+    display: inline-block;
+    border: 1px solid #bbbbbb;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    color: #8DD64F;
+    cursor: pointer;
+    font-size: 0px;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-left .lema-btn-play:before {
+    content: "\f04b";
+    font-family: 'FontAwesome';
+    font-size: 16px;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-left .lema-btn-play.pause:before {
+    content: "\f04c";
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-left .lema-btn-play:focus {
+    outline: none;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-center {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-center .btn-link {
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 6px 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-right {
+    position: relative;
+    float: left;
+    text-align: right;
+    width: 40%;
+    width: -webkit-calc(50% - 80px);
+    width: calc(50% - 80px);
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-right .lema-btn {
+    display: inline-block;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-right .lema-btn.next-chap {
+    background-color: #8DD64F;
+    border: 1px solid #8DD64F;
+    text-transform: uppercase;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-right .volumn-st {
+    display: inline-block;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-right .volumn-st .lema-volumn-btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 6px 12px;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-right .volumn-st .lema-volumn-btn i {
+    font-style: normal;
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-right .volumn-st .lema-volumn-btn .ion-volume:before {
+    font-family: "FontAwesome";
+    content: "\f028";
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-right .volumn-st .lema-volumn-btn.mute .ion-volume:before {
+    font-family: "FontAwesome";
+    content: "\f026";
+}
+
+.lema-curriculum-page .lema-video-controls-bar .main-bar .bar-right .lema-btn-settings-st {
+    display: inline-block;
+}
+
+.lema-curriculum-page .progress-hidden {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lema-curriculum-page .top-control-bar {
+    position: absolute;
+    width: 100%;
+    bottom: 100%;
+    left: 0;
+}
+
+.lema-curriculum-page .top-control-bar .lema-seekbar {
+    width: 80%;
+    width: -webkit-calc(100% - 135px);
+    width: calc(100% - 135px);
+    height: 10px;
+    top: 6px;
+    position: relative;
+    background-color: #333146;
+    float: left;
+}
+
+.lema-curriculum-page .top-control-bar .lema-seekbar .lema-seek-current {
+    height: 100%;
+    background-color: #8DD64F;
+    width: 0%;
+}
+
+.lema-curriculum-page .top-control-bar .time-info {
+    width: 135px;
+    float: left;
+    padding: 0px 10px;
+    text-align: right;
+    color: #FFFFFF;
+    line-height: 1;
+    position: relative;
+    top: 2px;
+}
+
+.lema-curriculum-page .top-control-bar .time-info .duration:after {
+    content: "/";
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 5px;
+}
+
+.lema-curriculum-page .lema-top-heading-bar .lema-lesson-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 0px;
+    padding-top: 0;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+.article-content.entry-content {
+    color: #545454;
+}
+.lema-curriculum-page .lema-top-heading-bar .lema-index-desc {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #6f6e72;
+    line-height: 30px;
+}
+
+.lema-curriculum-page .lema-top-heading-bar .lema-index-desc span {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.lema-curriculum-page.video-lesson .lema-top-heading-bar {
+    background-color: transparent;
+}
+
+.lema-curriculum-page.video-lesson .lema-top-heading-bar .lema-lesson-title {
+    color: #FFFFFF;
+}
+
+.lema-curriculum-page.video-lesson .lema-top-heading-bar .lema-index-desc {
+    color: #FFFFFF;
+}
+
+.lema-curriculum-page.video-lesson .lema-top-heading-bar .lema-index-desc span {
+    color: inherit;
+}
+
+
+.lema-curriculum-page.article-lesson .lema-article-wrapper {
+    width: 100%;
+    padding: 40px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lema-curriculum-page.article-lesson .lema-article-wrapper .lema-resource-list {
+    padding-left: 0;
+}
+
+.lema-curriculum-page .lema-article-controls-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FBFBFB;
+    padding: 18px 40px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.lema-curriculum-page .lema-article-controls-bar:before {
+    content: "";
+    display: table;
+}
+
+.lema-curriculum-page .lema-article-controls-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lema-curriculum-page .lema-article-controls-bar .bar-left {
+    float: left;
+}
+
+.lema-curriculum-page .lema-article-controls-bar .bar-left .btn-link {
+    display: inline-block;
+    margin-right: 10px;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #333146;
+}
+
+.lema-curriculum-page .lema-article-controls-bar .bar-left .btn-link:hover {
+    color: #8DD64F;
+}
+
+.lema-curriculum-page .lema-article-controls-bar .bar-right {
+    float: right;
+    text-align: right;
+}
+
+.lema-curriculum-page .lema-article-controls-bar .bar-right .lema-btn-settings-st {
+    display: inline-block;
+}
+
+.lema-curriculum-page .lema-article-controls-bar .bar-right .lema-btn {
+    display: inline-block;
+}
+
+.lema-btn.next-chap {
+    background-color: #8DD64F;
+    border: 1px solid #8DD64F;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.lema-curriculum-page .lema-resource-list {
+    padding: 16px 24px 16px 50px;
+}
+
+.lema-curriculum-page .lema-resource-list .resource-item {
+    display: block;
+    height: 40px;
+    background: #daf9f0;
+    max-width: 300px;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.lema-curriculum-page .lema-resource-list .resource-item:last-child{
+    margin-bottom: 0;
+}
+
+.lema-curriculum-page .lema-resource-list .resource-item .lema-link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #07d79b;
+    position: relative;
+    padding-left: 30px;
+    line-height: 40px;
+}
+
+.lema-curriculum-page .lema-resource-list .resource-item .lema-link:hover {
+    color: #333146;
+}
+
+.lema-curriculum-page .lema-resource-list .resource-item .lema-link:before {
+    content: "\f0ed";
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    color: inherit;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.lema-curriculum-page .lema-question-answers-box {
+    position: absolute;
+    height: 100%;
+    width: 480px;
+    right: -480px;
+    top: 0;
+    z-index: 2147483647 !important;
+    box-shadow: 3px 15px 20px 0 rgba(0, 0, 0, 0.05);
+    background-color: #FFFFFF;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-topbar {
+    padding: 8px 16px;
+    background-color: #FBFBFB;
+    text-align: center;
+    position: relative;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-topbar .lema-title {
+    font-weight: 700;
+    color: #333146;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-topbar .lema-btn {
+    position: absolute;
+    top: 8px;
+    border: none;
+    background-color: transparent;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-topbar .lema-btn:hover {
+    color: #8DD64F;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-topbar .lema-btn.btn-minimize {
+    right: 50px;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-topbar .lema-btn.btn-close {
+    right: 16px;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-question-content {
+    height: 90%;
+    height: -webkit-calc(100% - 40px);
+    height: calc(100% - 40px);
+    padding: 16px 32px;
+    overflow-y: auto;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-search-qa {
+    margin-bottom: 16px;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-search-qa .lema-form-group {
+    margin-bottom: 16px;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-search-qa .question-count {
+    display: inline-block;
+    float: left;
+    padding-right: 15px;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-search-qa .btn-add-new-ques {
+    float: right;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-question-list .question-item {
+    padding: 8px 0px;
+    border-bottom: 1px solid #bbbbbb;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-question-list .question-item:hover {
+    background-color: #bbbbbb;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-question-list .question-item .lema-avatar {
+    width: 50px;
+    float: left;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-question-list .question-item .desc {
+    padding-left: 20px;
+    width: calc(100% - 50px);
+    float: left;
+}
+
+.lema-curriculum-page .lema-question-answers-box .lema-question-list .question-item .desc .lema-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333146;
+    margin-top: 0;
+    margin-bottom: 0px;
+    position: relative;
+    top: -6px;
+}
+.lema-curriculum-page  .mb-title {
+    display: none;
+}
+.lema-quiz-test-content {
+    margin-bottom: 40px;
+}
+
+.lema-quiz-test-content .lema-form-group {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 16px;
+}
+
+.lema-quiz-test-content .lema-form-group .lema-control-label {
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.lema-quiz-test-content .lema-form-group .lema-control-label .lema-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 26px;
+    color: #6F6E72;
+}
+
+.lema-quiz-test-content .lema-form-group .lema-control-label .lema-label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'FontAwesome';
+}
+
+.lema-quiz-test-content .lema-form-group .lema-control-label .lema-label.to-pass:before {
+    content: "\f022";
+}
+
+.lema-quiz-test-content .lema-form-group .lema-control-label .lema-label.deadline:before {
+    content: "\f133";
+}
+
+.lema-quiz-test-content .lema-form-group .lema-control-label .lema-label.attempt:before {
+    content: "\f29c";
+}
+
+.lema-quiz-test-content .lema-form-group .lema-control-label .lema-label.estimate:before {
+    content: "\f017";
+}
+
+.lema-quiz-test-content .lema-form-group .lema-control-right {
+    width: 70%;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+ .lema-curriculum-page .lema-article-wrapper.lema-quiz-test {
+    padding: 160px 60px 100px;
+    width: 100%;
+} 
+.lema-curriculum-page .lema-article-wrapper.lema-quiz-test .lema-top-heading-bar {
+  width: auto;
+  background-color: #FFFFFF;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+ .lema-article-wrapper.lema-quiz-test .lema-top-heading-bar {
+    position: fixed;
+    opacity: 1;
+    pointer-events: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #FFFFFF;
+    z-index: 10;
+    padding: 24px 120px 24px 160px;
+    box-shadow: 3px 15px 20px 0 rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 3px 15px 20px 0 rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+}
+
+.lema-article-wrapper.lema-quiz-test  .lema-top-heading-bar .lema-btn-back {
+    position: absolute;
+    font-size: 24px;
+    color: #333146;
+    display: inline-block;
+    top: 32px;
+    left: 60px;
+    padding: 6px 12px;
+    background-color: transparent;
+    border:none;
+}
+
+.lema-article-wrapper.lema-quiz-test  .lema-top-heading-bar .lema-btn-back:hover {
+    background-color: transparent;
+    border: none;
+    color: #8DD64F;
+}
+.lema-article-wrapper.lema-quiz-test .lema-top-heading-bar .lema-lesson-title {
+  padding-top: 0px;
+}
+.lema-article-wrapper.lema-quiz-test .lema-time-left {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 0 16px;
+    text-align: right;
+}
+
+.lema-article-wrapper.lema-quiz-test .lema-time-left .lema-text {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.lema-article-wrapper.lema-quiz-test .lema-time-left .count-time {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333146;
+}
+
+.lema-article-wrapper.lema-quiz-test .lema-total-score {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 0 16px;
+    text-align: right;
+}
+
+.lema-article-wrapper.lema-quiz-test .lema-total-score .total-point {
+    font-size: 14px;
+    color: #6F6E72;
+    display: block;
+}
+
+.lema-article-wrapper.lema-quiz-test .lema-total-score .lema-progress-status {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333146;
+}
+
+.admin-bar .lema-curriculum-page.lema-navbar-open .lema-article-wrapper.lema-quiz-test .lema-top-heading-bar {
+    margin-top: 30px;
+}
+.lema-curriculum-page.lema-navbar-open .lema-article-wrapper.lema-quiz-test  .lema-top-heading-bar {
+    left: 480px;
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+
+.lema-quiz-pagination {
+    display: inline-block;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0px;
+}
+
+.lema-quiz-pagination>li {
+    display: inline-block;
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #dddddd;
+    line-height: 30px;
+    text-align: center;
+}
+
+.lema-quiz-pagination>li:first-child {
+    margin-left: 0;
+}
+
+.lema-quiz-pagination>li:last-child {
+    margin-right: 0;
+}
+
+.lema-quiz-pagination>li.not-finish {
+    border-color: #D53939;
+}
+
+.lema-quiz-pagination>li.current {
+    border-color: #8DD64F;
+}
+
+.lema-quiz-pagination>li.next {
+    font-size: 0px;
+}
+
+.lema-quiz-pagination>li.next>a:before {
+    font-family: "FontAwesome";
+    content: "\f105";
+    font-size: 16px;
+}
+
+.lema-quiz-pagination>li.prev {
+    font-size: 0px;
+}
+
+.lema-quiz-pagination>li.prev>a:before {
+    font-family: "FontAwesome";
+    content: "\f104";
+    font-size: 16px;
+}
+
+.lema-quiz-pagination>li>a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: inherit;
+    color: #6F6E72;
+}
+.lema-quiz-list {
+    margin-bottom: 40px;
+}
+.lema-quiz-list .lema-quiz-item {
+    margin-bottom: 16px;
+}
+
+.lema-quiz-list .lema-quiz-item .point {
+    display: block;
+    width: 60px;
+    text-align: center;
+    padding: 16px 8px;
+    border: 2px solid #dddddd;
+    float: left;
+    position: relative;
+}
+
+.lema-quiz-list .lema-quiz-item .point:before {
+    bottom: 0;
+    left: -2px;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 14px 30px;
+    border-color: transparent transparent #dddddd transparent;
+}
+
+.lema-quiz-list .lema-quiz-item .point:after {
+    bottom: -2px;
+    left: -1px;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 29px 14px 29px;
+    border-color: transparent transparent #FFFFFF transparent;
+}
+
+.lema-quiz-list .lema-quiz-item .point .num {
+    display: block;
+    font-weight: 700;
+    color: #8DD64F;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.lema-quiz-list .lema-quiz-item .point .desc {
+    display: block;
+    font-size: 14px;
+    color: #6F6E72;
+}
+
+.lema-quiz-list .lema-quiz-item .quiz-block {
+    width: 80%;
+    width: calc(100% - 60px);
+    width: -webkit-calc(100% - 60px);
+    padding-left: 40px;
+    float: left;
+}
+
+.lema-quiz-list .lema-quiz-item .question {
+    margin-bottom: 16px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.lema-quiz-list .lema-quiz-item .question .ques-num {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333146;
+}
+
+.lema-quiz-list .lema-quiz-item .answers {
+    padding-left: 50px;
+}
+
+.lema-quiz-list .lema-quiz-item .answers .lema-form-group .lema-radio+.lema-alert {
+    margin-top: 8px;
+}
+
+.lema-quiz-list .lema-quiz-item .answers .lema-error .lema-radio .lema-input-text:after {
+    background-color: #D53939;
+}
+
+.lema-quiz-result-info {
+    position: relative;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 16px;
+    width: 100%;
+    display: table;
+}
+
+.lema-quiz-result-info .lema-icon {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #DDDDDD;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lema-quiz-result-info .lema-icon:before {
+    font-family: 'FontAwesome';
+    font-size: 24px;
+}
+
+.lema-quiz-result-info.lema-success .lema-icon {
+    border-color: #8DD64F;
+    color: #8DD64F;
+}
+
+.lema-quiz-result-info.lema-success .lema-icon:before {
+    content: "\f00c";
+}
+
+.lema-quiz-result-info.lema-danger .lema-icon {
+    border-color: #D53939;
+    color: #D53939;
+}
+
+.lema-quiz-result-info.lema-danger .lema-icon:before {
+    content: "\f12a";
+}
+
+.lema-quiz-result-info .lema-result-desc {
+    display: inline-block;
+    padding-left: 16px;
+    padding-right: 16px;
+    vertical-align: middle;
+    width: 74%;
+    width: -webkit-calc(100% - 270px);
+    width: -moz-calc(100% - 270px);
+    width: calc(100% - 270px);
+}
+
+.lema-quiz-result-info .lema-result-desc>strong {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333146;
+}
+
+.lema-quiz-result-info .right-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 210px;
+}
+
+.lema-quiz-result-info .right-box .lema-btn {
+    display: block;
+    text-align: center;
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
+
+.lema-quiz-result-info .right-box .lema-btn+.lema-btn {
+    margin-top: 10px;
+}
+
+.lema-quiz-result-info+.lema-quiz-list {
+    margin-top: 40px;
+}
+
+.lema-quiz-result-page {
+    text-align: center;
+}
+
+.lema-quiz-result-page.lema-article-wrapper {
+    padding: 32px;
+    width: 770px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.lema-quiz-result-page .lema-quiz-heading {
+    margin-bottom: 48px;
+}
+
+.lema-quiz-result-page .lema-quiz-heading .lema-title {
+    line-height: 1.2;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #333146;
+}
+
+.lema-quiz-heading .lema-index-desc {
+    color: #6F6E72;
+}
+
+.lema-quiz-result-content .lema-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 54px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    -webkit-border-radius: 50%;
+    border: 3px solid #8DD64F;
+}
+
+.lema-quiz-result-content .lema-icon:before {
+    font-size: 30px;
+    font-family: 'FontAwesome';
+}
+
+.lema-quiz-result-content .lema-icon.icon-fail {
+    border-color: #D53939;
+    color: #D53939;
+}
+
+.lema-quiz-result-content .lema-icon.icon-fail:before {
+    content: "\f00d";
+}
+
+.lema-quiz-result-content .lema-icon.icon-success {
+    border-color: #8DD64F;
+    color: #8DD64F;
+}
+
+.lema-quiz-result-content .lema-icon.icon-success:before {
+    content: "\f00c";
+}
+
+.lema-quiz-result-content .lema-tile {
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.lema-quiz-result-content .result-desc {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #6F6E72;
+}
+
+.lema-quiz-result-page .lema-quiz-result-content .result-desc b,
+.lema-quiz-result-page .lema-quiz-result-content .result-desc strong {
+    color: #333146;
+}
+
+.lema-quiz-result-content .lema-quiz-time {
+    margin-bottom: 24px;
+}
+
+.lema-quiz-result-content .lema-quiz-time .lm-item {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.lema-quiz-result-content .lema-quiz-time .lm-item:before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #6F6E72;
+}
+
+.lema-quiz-result-content .lema-quiz-time .lm-item:first-child {
+    margin-left: 0px;
+}
+
+.lema-quiz-result-content .lema-quiz-time .lm-item:last-child {
+    margin-right: 0px;
+}
+
+.lema-quiz-result-content .lema-quiz-time .lm-item.ques-num:before {
+    content: "\f29c";
+}
+
+.lema-quiz-result-content .lema-quiz-time .lm-item.time:before {
+    content: "\f017";
+}
+
+.lema-quiz-result-content .lema-score-detail {
+    margin-bottom: 48px;
+}
+
+.lema-quiz-result-content .lema-score-detail .lema-item {
+    display: inline-block;
+    margin-right: 16px;
+    margin-right: 16px;
+    vertical-align: middle;
+    text-align: center;
+    min-width: 100px;
+}
+
+.lema-quiz-result-content .lema-score-detail .lema-item .num {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.lema-quiz-result-content .lema-score-detail .lema-item .text {
+    font-size: 14px;
+    display: block;
+    color: #6F6E72;
+}
+
+
+.correct .num {
+    color: #8DD64F;
+}
+
+.wrong .num {
+    color: #D53939;
+}
+
+.empty .num {
+    color: #DDDDDD;
+}
+
+.done .num {
+    color: #333146;
+}
+
+.point .num {
+    color: #FFE13A;
+} 
+
+.lema-quiz-result-page .lema-quiz-result-content .lema-table-score td .date {
+    display: block;
+    font-weight: 700;
+}
+
+.lema-quiz-result-page .lema-quiz-result-content .lema-table-score .btn-remove {
+    color: #6F6E72;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 12px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #DDDDDD;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+
+.lema-quiz-result-page .lema-quiz-result-content .lema-table-score .btn-remove:hover {
+    color: #D53939;
+}
+
+
+/*=====  End of curriculum page layout  ======*/
+
+
+/*=======================================
+=            Video JS Custom            =
+=======================================*/
+
+.video-js .vjs-big-play-button {
+    top: 50%;
+    left: 50%;
+}
+
+
+
+div#lema-audio-player-box {
+    padding: 40px;
+}
+.lema-block-audio:hover{
+    cursor:pointer;
+}
+.lema-block-audio{
+    width: 100%;
+    text-align: center;
+}
+audio#lema-audio {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*=====  End of Video JS Custom  ======*/
+
+@media (max-width: 767px) {
+    .lema-quiz-test .lema-top-heading-bar .lema-index-desc,
+    .lema-quiz-test .lema-top-heading-bar .lema-lesson-title{
+        display: none;
+    }
+    .lema-article-wrapper.lema-quiz-test .lema-top-heading-bar .lema-btn-back {
+        display: none;
+    }
+    .lema-curriculum-page  .mb-title {
+        display: block;
+    }
+    .quiz-question-form {
+        padding-top: 100px;
+    }
+}

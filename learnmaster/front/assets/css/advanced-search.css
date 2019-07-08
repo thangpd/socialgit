@@ -1,0 +1,191 @@
+
+
+.lema-page-advanced-search {
+	width: 100%;
+	font-size: 0;
+}
+
+.lema-page-advanced-search .lema-course-filter-right {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	width: 70%;
+	padding-left: 40px;
+}
+
+.lema-page-advanced-search .widget-title {
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.44;
+	letter-spacing: 0.3px;
+	text-align: left;
+	color: #28313b;
+}
+
+.lema-page-advanced-search .widget-content span{
+	font-family: Montserrat;
+	font-size: 14px;
+	text-align: left;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+
+.lema-page-advanced-search .widget-content label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.lema-page-advanced-search .widget-content {
+	margin-top: 20px;
+}
+
+.lema-page-advanced-search .button-view a {
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	text-align: left;
+	color: #8dd64f;
+}
+
+.lema-page-advanced-search .button-view {
+	margin-top: 10px;
+}
+
+.lema-page-advanced-search label input {
+	display: none;
+}
+
+.lema-page-advanced-search .widget-content label span.text {
+	position: relative;
+	padding-left: 35px;
+}
+.lema-page-advanced-search .widget-content label span.number {
+	float: right;
+}
+
+.lema-page-advanced-search .widget-content label span.text:before {
+	position: absolute;
+	content: "";
+	top: auto;
+	left: 0;
+	bottom: 1px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ececec;
+	border-radius: 2px;
+	background-color: transparent;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.lema-page-advanced-search .widget-content label span.text:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	width: 12px;
+	height: 6px;
+	margin-top: -4px;
+	border-style: solid;
+	border-color: #8dd64f;
+	border-width: 0 0 2px 2px;
+	-webkit-transform: translate(0, -50%) rotate(-45deg);
+	-ms-transform: translate(0, -50%) rotate(-45deg);
+	-o-transform: translate(0, -50%) rotate(-45deg);
+	transform: translate(0, -50%) rotate(-45deg);
+	opacity: 0;
+}
+
+.lema-page-advanced-search .widget-content label input[type="checkbox"]:checked + span.text:after {
+	opacity: 1;
+}
+
+.lema-page-advanced-search .lema-widget + .lema-widget {
+	margin-top: 50px;
+}
+
+.lema-page-advanced-search .button-wrapper a {
+	background-color: #8dd64f;
+	color: #fff;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 230px;
+	padding: 10px 20px;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	float: right;
+	border-radius: 3px;
+}
+
+.lema-page-advanced-search .title-advanced-search {
+	font-family: Montserrat;
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: #28313b;
+	display: inline-block;
+}
+
+.lema-page-advanced-search .title-advanced-search + .advanced-search-wrapper {
+	margin-top: 50px;
+}
+
+.lema-page-advanced-search .lema-columns {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.modal-dialog {
+	width: 1170px;
+}
+
+.modal-content {
+	padding: 50px 50px 100px 50px;
+}
+
+.wrapper {
+  background: black url(https://subtlepatterns.com/patterns/black_lozenge.png) repeat;
+  width: 100%;
+  height: 1080px; /* Didn't do 100% because of height of rendering area */
+  position:absolute;
+  left: 0;
+  top: 0;
+  z-index: 666;
+  font-family: "Helvetica";
+  display:none;
+}
+
+.lema-modal {
+	background-color: #fff;
+	width: 1170px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+
+.lema-modal-body {
+	padding: 50px 50px 70px 50px;
+}
+
+.lema-modal-button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.lema-modal-button a:before {
+	content: "\f00d";
+	font-family: FontAwesome;
+	font-size: 30px;
+	color: #6f6e72;
+}
+
+.lema-modal-button a {
+	font-size: 0;
+}

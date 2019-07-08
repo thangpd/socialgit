@@ -1,0 +1,75 @@
+.lema-autocomplete-search {
+    display: inline-block;
+    width: 100%;
+}
+.lema-search-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.lema-searchbox-submit {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 0;
+    color: #000;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    text-align: center;
+}
+.lema-autocomplete {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.search-box-suggest-title{
+    padding-left: 10px;
+    display: none;
+}
+
+.search-box-suggest-title:first-child{
+    display: block;
+}
+
+
+.search-suggesstion{
+    padding-bottom: 5px;
+    border-bottom: 1px #ddd solid;
+    display: inline-block;
+}
+.search-suggesstion:first-child:before{
+    /*display: inline-block;
+    height: 20px;
+    content: "Quick result(s) :";*/
+}
+.search-suggesstion:first-child{
+    margin-top: 10px;
+}
+.search-suggesstion:hover{
+    background: #ddd;
+    cursor: pointer;
+}
+
+.search-suggesstion .image-thumnail{
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+.search-suggesstion .image-thumnail img{
+    max-width: 90px;
+}
+
+.search-suggesstion .course-search-info{
+    float: left;
+    display: inline-block;
+    width: 295px;
+}
+
+.search-suggesstion .course-search-info h5{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+}

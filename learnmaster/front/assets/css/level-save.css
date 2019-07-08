@@ -1,0 +1,29 @@
+.lema-level-save ul {
+	padding: 0;
+	margin: 0;
+}
+
+.lema-level-save li {
+	display: inline-block;
+	vertical-align: top;
+	color: #6f6e72;
+	font-family: Montserrat;
+} 
+
+.lema-level-save li + li {
+	margin-left: 15px;
+}
+
+.lema-level-save li:before {
+	font-family: FontAwesome;
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+.lema-level-save .graph:before{
+	content: '\f012';
+}
+
+.lema-level-save .saved:before {
+	content: '\f097';
+} 

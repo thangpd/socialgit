@@ -1,0 +1,14 @@
+.lema-author img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
+
+.lema-author .author-name {
+	font-family: Montserrat;
+	text-align: left;
+	color: #6f6e72;
+	margin-left: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}

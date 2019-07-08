@@ -1,0 +1,168 @@
+/*============================================
+=            Student User Profile            =
+============================================*/
+.lema-user-profile .img-wrapper,
+.lema-user-profile .content-wrapper {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.lema-user-profile .img-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 180px;
+}
+
+.lema-user-profile .img-wrapper:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.lema-user-profile .img-wrapper img {
+    position: absolute;
+    width: auto;
+    max-width: none;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.lema-user-profile .content-wrapper {
+    width: calc(100% - 185px);
+    padding-left: 20px;
+}
+
+.lema-user-profile .content-wrapper .name,
+.lema-user-profile .content-wrapper .position {
+    font-family: "Montserrat", sans-serif;
+}
+
+.lema-user-profile .content-wrapper .name {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #28313b;
+}
+
+.lema-user-profile .content-wrapper .position {
+    font-size: 16px;
+    color: #6f6e72;
+    margin-top: 10px;
+}
+
+.lema-user-profile .content-wrapper .social {
+    margin-top: 20px;
+}
+
+.lema-user-profile .social li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+/* .lema-user-profile  .social  li + li {
+  margin-left: 10px;
+} */
+
+.lema-user-profile .social li .link {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    color: #afafaf;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    line-height: 2.2;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.lema-user-profile .social li .link:hover,
+.lema-user-profile .social .link:focus,
+.lema-user-profile .social li .link.active {
+    color: #fff;
+    background-color: #28313b;
+}
+
+.lema-user-profile .content-wrapper .content-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #858585;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+/*=====  End of Student User Profile  ======*/
+
+/*===============================================
+=            Student Profile Editing            =
+===============================================*/
+.user-profile-editing .lema-columns .item-profile {
+    width:100%;
+    float: none;
+}
+
+.user-profile-editing .block-wrapper + .block-wrapper {
+    margin-top: 20px;
+}
+
+.user-profile-editing .block-wrapper .title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #28313b;
+    margin-bottom: 20px;
+}
+
+.user-profile-editing .block-wrapper .title .red-star {
+    color: #e84b4b;
+}
+
+.user-profile-editing .edit-form-wrapper {
+    padding: 30px;
+    background-color: #f6f6f6;
+    border-radius: 3px;
+}
+
+.user-profile-editing .edit-form-wrapper .textarea-input {
+    height: 210px;
+}
+
+.user-profile-editing .edit-form-wrapper .character-limit {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2.5;
+    transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+}
+
+.lema-user-profile .block-wrapper {
+    margin-bottom: 0;
+    width:100%;
+}
+.lema-user-profile .tab-wrapper {
+    width:50%;
+    float:left;
+    padding:10px;
+}
+.lema-user-profile .tab-wrapper .edit-form-wrapper.links{
+    overflow: auto;
+    height:400px;
+}
+
+/*=====  End of Student Profile Editing  ======*/

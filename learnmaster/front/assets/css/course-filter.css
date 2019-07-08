@@ -1,0 +1,170 @@
+.lema-page-course-filter {
+	width: 100%;
+	font-size: 0;
+}
+.lema-page-course-filter .lema-course-filter-left {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	width: 30%;
+	padding: 0 15px;
+	margin-top: 40px;
+}
+
+.lema-page-course-filter .lema-course-filter-right {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	width: 70%;
+	padding: 0 15px;
+}
+.lema-page-course-filter .lema-course-filter-right .lema-autocomplete-search {
+	margin-top: 50px;
+}
+
+.lema-page-course-filter .lema-course-filter-left .widget-title {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.44;
+	letter-spacing: 0.3px;
+	text-align: left;
+	color: #28313b;
+}
+
+.lema-page-course-filter .lema-course-filter-left .widget-content span{
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 14px;
+	text-align: left;
+	color: #4a4a4a;
+	font-weight: 400;
+}
+
+.lema-page-course-filter .lema-course-filter-left .widget-content label {
+	display: block;
+}
+
+.lema-page-course-filter .lema-course-filter-left .widget-content {
+	margin-top: 20px;
+}
+
+.lema-page-course-filter .lema-course-filter-left .button-view a {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	text-align: left;
+	color: #8dd64f;
+	text-transform: uppercase;
+}
+
+.lema-page-course-filter .lema-course-filter-left .button-view {
+	margin-top: 10px;
+}
+
+.lema-page-course-filter .lema-course-filter-left label input {
+	display: none;
+}
+
+.lema-page-course-filter .lema-course-filter-left .widget-content label span.text {
+	position: relative;
+	padding-left: 35px;
+}
+.lema-page-course-filter .lema-course-filter-left .widget-content label span.number {
+	float: right;
+}
+
+.lema-page-course-filter .lema-course-filter-left .widget-content label span.text:before {
+	position: absolute;
+	content: "";
+	top: auto;
+	left: 0;
+	bottom: 1px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ececec;
+	border-radius: 2px;
+	background-color: transparent;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.lema-page-course-filter .lema-course-filter-left .widget-content label span.text:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	width: 12px;
+	height: 6px;
+	margin-top: -4px;
+	border-style: solid;
+	border-color: #8dd64f;
+	border-width: 0 0 2px 2px;
+	-webkit-transform: translate(0, -50%) rotate(-45deg);
+	-ms-transform: translate(0, -50%) rotate(-45deg);
+	-o-transform: translate(0, -50%) rotate(-45deg);
+	transform: translate(0, -50%) rotate(-45deg);
+	opacity: 0;
+}
+
+.lema-page-course-filter .lema-course-filter-left .widget-content label input[type="checkbox"]:checked + span.text:after {
+	opacity: 1;
+}
+
+.lema-page-course-filter .lema-course-filter-left .lema-widget {
+	margin-top: 50px;
+}
+
+.lema-page-course-filter .lema-course-filter-left .lema-widget:first-child {
+	margin-top: 0;
+}
+
+
+
+.lema-search-input{
+	position: relative;
+}
+.lema-search-input:after{
+	content: "\f002";
+	font-family: FontAwesome;
+	font-size: 13px;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	position: absolute;
+	right: -10px;
+	top: 10px;
+}
+
+.lema-course-filter-right .block-title h3{
+	font-weight: bold;
+}
+
+
+.lema-search-input #lema-q{
+	width: 100%;
+	height: 38px;
+}
+
+
+.lema-cat-tree {
+	width: 100%;
+}
+.lema-cat-tree .level1 span:before{
+
+}
+.lema-cat-tree .level2 span:before{
+	content: "aaaa";
+	display: inline-block;
+}
+.lema-cat-tree .level3{
+
+}
+
+
+a#lema-clear-search-term {
+	float: right;
+	margin-top: -45px;
+	color: red;
+}

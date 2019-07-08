@@ -1,0 +1,101 @@
+
+
+
+
+
+	
+/*----------  leave comment  ----------*/
+ 	.leave-comment .leave-comment-title {
+		font-family: Montserrat;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: left;
+		color: #28313b;
+ 	}
+
+ 	.leave-comment .lema-comment {
+ 		margin-top: 40px;
+ 	}
+
+	.leave-comment .comment-list {
+		padding-left: 0;
+	}
+
+	.leave-comment .comment-list > li {
+		padding-bottom: 20px;
+	}
+
+	.leave-comment .comment-list > li + li {
+		padding-top: 20px;
+		border-top: solid 1px #dadfea;
+	}
+
+	.leave-comment .comment-container {
+		font-size: 0;
+		display: block;
+		width: 100%;
+	}
+
+	.leave-comment .comment-container img {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.leave-comment .comment-container .comment-text {
+		display: inline-block;
+		vertical-align: top;
+		width: calc(100% - 60px);
+		font-size: 14px;
+		padding-left: 20px;
+	}
+
+	.leave-comment .list-like-view {
+		padding-left: 0;
+	}
+
+	.leave-comment .like-view {
+		margin-top: 5px;
+	}
+
+	.leave-comment .like-view + .lema-star-rating {
+		margin-left: 30px;
+	}
+
+	.leave-comment .like-view,
+	.leave-comment .lema-star-rating {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.leave-comment .list-like-view li {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.leave-comment  .list-like-view li + li {
+		margin-left: 20px;
+	}
+
+	.leave-comment .comment-info .like-view a {
+		font-family: Montserrat;
+		font-size: 14px;
+		text-align: left;
+		color: #6f6e72;
+	}
+
+	.leave-comment .comment-info .like-view a:before {
+	    font-family: "FontAwesome";
+	    font-size: 14px;
+	    margin-right: 10px;
+	}
+
+	.leave-comment .comment-info .like-view a.view:before {
+		content: "\f06e";
+	}
+
+	.leave-comment .comment-info .like-view a.like:before {
+		content: '\f004';
+	}

@@ -1,0 +1,11 @@
+.lema-hours {
+	background-color: #333146;
+	color: #fff;
+	padding: 8px;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

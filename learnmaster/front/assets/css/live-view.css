@@ -1,0 +1,29 @@
+.lema-like-view ul {
+	padding: 0; 
+	margin: 0;
+}
+
+.lema-like-view li {
+	display: inline-block;
+	vertical-align: top;
+	color: #6f6e72;
+	font-family: Montserrat;
+} 
+
+.lema-like-view li + li {
+	margin-left: 15px;
+}
+
+.lema-like-view li:before {
+	font-family: FontAwesome;
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+.lema-like-view .liked:before {
+	content: '\f004';
+}
+
+.lema-like-view .view:before {
+	content: '\f0c0';
+}

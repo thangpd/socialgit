@@ -1,0 +1,100 @@
+.lema-tool-bar {
+    width: 100%;
+    display: inline-block;
+    clear: both;
+    padding: 5px 0;
+}
+.lema-left{
+    float: left;
+}
+.lema-right{
+    float: right;
+}
+
+.lema-search-input{
+    position: relative;
+}
+.lema-search-input:after{
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 13px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+}
+
+.lema-extension-search button {
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    background: #fff;
+    border: 0;
+}
+
+
+
+.extension-block {
+    display: block;
+}
+.extension-block .extension-item{
+    width: 220px;
+    height: 350px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px #ddd solid;
+    border-radius: 5px;
+}
+
+.extension-block .extension-item:hover{
+    background: #fff;
+    cursor: pointer;
+}
+.extension-block a{
+    text-decoration: none;
+}
+.extension-block .extension-item h3{
+    font-size: 22px;
+    color: #5a5a5a;
+    padding: 10px 0 0 10px;
+    margin: 0;
+    padding-bottom: 0;
+}
+.extension-block .extension-item .extension-image img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.extension-block .extension-item .extension-desc{
+    color: #929292;
+    padding: 10px;
+    height: 48px;
+    overflow: hidden;
+}
+.extension-block .extension-item .extension-bottom{
+
+}
+.extension-block .extension-item .extension-bottom .extension-price{
+    background: #b40000;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+.extension-block .extension-item .extension-bottom .extension-price a{
+    color: #fff;
+}
+.extension-block .extension-item .extension-bottom .extension-type{
+    color: #6b6a6e;
+    padding-right: 10px;
+}
+
+form.lema-extension-search {
+    margin-right: 10px;
+}

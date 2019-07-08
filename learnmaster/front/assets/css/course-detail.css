@@ -1,0 +1,906 @@
+/*----------  general  ----------*/
+
+	.course-detail .lema-course-content .preface {
+		margin-top: 0;
+	}
+	.lema-course-detail-wrapper section:first-child{
+		margin-top: 0px;
+	}
+	.course-detail section{
+		margin-top: 50px;
+	}
+	.lema-page-content.course-detail {
+	  margin-top: 50px;
+	  padding: 0;
+	  margin-bottom: 80px;
+	  position: relative;
+	}
+
+	.lema-page-content .lema-course-content {
+	  width: 70%;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  float: left;
+	  position: relative;
+	}
+	
+	.course-detail .lema-course-sidebar {
+		position: absolute;
+		width: 30%;
+		left: auto;
+		right: -15px;
+		top: 10px;
+		float: right;
+		padding-left: 15px;
+		padding-right: 3px;
+		right : 0px
+	}
+	.course-detail-section-bar {
+	  position: relative;
+	  margin-top: 20px;
+	}
+
+	.course-detail-section-bar .lema-affix-bar {
+	  -webkit-transition: all 0.3s ease;
+	  -moz-transition: all 0.3s ease;
+	  -ms-transition: all 0.3s ease;
+	  -o-transition: all 0.3s ease;
+	  transition: all 0.3s ease;
+	}
+
+	.course-detail-section-bar .lema-affix-bar.addfix {
+	  position: fixed;
+	  top: 0;
+	  z-index: 99;
+	}
+	.course-detail-section-bar .lema-affix-bar.fix-end {
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		-webkit-transform: translateY(-100%);
+		-moz-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+		-o-transform: translateY(-100%);
+		transform: translateY(-100%);
+		
+	}
+	.course-detail-section-bar .lema-nav {
+	  list-style: none;
+	  text-align: justify;
+	  border-bottom: 1px solid #F6F6F6;
+	  padding-left: 0px;
+	  width: 100%;
+	  margin: 0;
+	  background-color: #ffffff;
+	}
+	.admin-bar .course-detail-section-bar .lema-nav {
+	    padding-top: 35px;
+	}
+
+	.course-detail-section-bar .lema-nav > li {
+	  display: table-cell;
+	  width: 1%;
+	  text-align: center;
+	  position: relative;
+	  margin-bottom: -1px;
+	  background: #FFFFFF;
+	}
+	
+	.course-detail-section-bar .lema-nav > li > a {
+	  font-weight: 500;
+	  font-size: 18px;
+	  color: #333146;
+	  display: block;
+	  padding: 6px 12px;
+	  position: relative;
+	}
+
+	.course-detail-section-bar .lema-nav > li > a:before {
+	  content: "";
+	  position: absolute;
+	  width: 100%;
+	  height: 0px;
+	  background-color: #8DD64F;
+	  bottom: 0;
+	  left: 0;
+	  -webkit-transition: all 0.3s ease;
+	  -moz-transition: all 0.3s ease;
+	  -ms-transition: all 0.3s ease;
+	  -o-transition: all 0.3s ease;
+	  transition: all 0.3s ease;
+	}
+
+	.course-detail-section-bar .lema-nav > li.active > a:before {
+	  height: 4px;
+	}
+
+	.lema-course-sidebar .course-sidebar {
+	  background-color: #FFFFFF;
+	}
+
+	.lema-course-sidebar .course-sidebar.addfix {
+	  position: fixed;
+	  top: 0;
+	  z-index: 99;
+	  margin-top: 0;
+	}
+	.lema-sidebar-anchor {
+		position: absolute;
+		width: 30%;
+		right: 0;
+		top: 0;
+		min-height: 1px;
+		pointer-events: none;
+	}
+	.course-detail section .lema-course .lema-course-all{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+
+
+/*----------  preface  ----------*/
+	.preface .preface-title {
+		font-size: 40px;
+		font-weight: bold;
+		letter-spacing: 0.5px;
+		text-align: left;
+		color: #28313b;
+		line-height: 1.1;
+	}
+
+	.preface .preface-sub-title {
+		font-size: 16px;
+		line-height: 1.5;
+		text-align: left;
+		color: #858585;
+		margin-top: 10px;
+	}
+
+	.preface .lema-star-rating {
+		display: block;
+		width: 100%;
+	}
+
+	.preface .lema-star-rating .icon-star {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.preface .lema-star-rating .view-star {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 5px;
+		margin-left: 15px;
+		font-size: 14px;
+		text-align: left;
+		color: #6f6e72;
+	}
+
+	.preface .preface-info {
+		margin-top: 20px;
+	}
+
+	.preface .list-preface-info {
+		padding-left: 0;
+		margin-bottom: 0;
+		display: block;
+		width: 100%;
+	}
+
+	.preface .list-preface-info > li  {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 40px;
+		margin-bottom: 10px;
+	}
+	.preface .list-preface-info > li:last-child{
+		margin-right: 0px;
+	}
+	
+
+	.preface .list-preface-info > li > a {
+		font-size: 14px;
+		text-align: left;
+		color: #6f6e72;
+		margin-left: 7px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.preface .list-preface-info > li > a span {
+		font-size: 14px;
+		font-weight: 600;
+		text-align: left;
+		color: #233142;
+		margin-left: 5px;
+	}
+
+	.preface .list-preface-info > li > i {
+		font-size: 18px;
+		margin-top: 0;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.preface .made-in {
+		font-size: 14px;
+		text-align: left;
+		color: #6f6e72;	
+		margin-top: 10px;
+	}
+
+/*---------- what learn  ----------*/
+
+	.what-learn {
+		border: solid 1px #dadfea;
+		padding: 25px;
+		border-radius: 10px;
+	}
+
+	.what-learn .content-learn {
+		display: block;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.what-learn .content-learn:before{
+		content: "";
+		display: table;
+	}
+	.what-learn .content-learn:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.what-learn .item-left,
+	.what-learn .item-right {
+		width: 50%;
+		display: block;
+		padding: 0px 15px;
+		float: left;
+	}
+
+	.what-learn .button-view {
+		display: block;
+		width: 100%;
+	}
+
+	.what-learn .learn-title {
+		font-size: 18px;
+		font-weight: 700;
+		text-align: left;
+		color: #28313b;
+	}
+
+	.what-learn .content-item span {
+		font-size: 14px;
+		text-align: left;
+		color: #4a4a4a;
+		font-weight: 500;
+	}
+
+	.what-learn .content-item label {
+		margin-top: 40px;
+	}
+
+	.what-learn .button-view {
+		margin-top: 30px;
+	}
+
+	.view-more {
+		font-size: 14px;
+		font-weight: 500;
+		text-align: left;
+		color: #8dd64f;
+	}
+
+	.view-more:hover {
+		color: #8dd64f ;
+	}
+
+	.what-learn .content-learn .list-content-item {
+		padding-left: 0;
+		margin-bottom: 0;
+		margin-top: 20px;
+		list-style: none;
+		
+	}
+
+	.what-learn .content-learn .item {
+		position: relative;
+		padding-left: 35px;
+		font-size: 14px;
+		text-align: left;
+		color: #4a4a4a;
+	}
+
+	.what-learn .content-learn .item + .item {
+		margin-top: 15px;
+	}
+
+	.what-learn .content-learn .item:before {
+		position: absolute;
+		content: "";
+		left: 0;
+		top: 2px;
+		bottom: 1px;
+		width: 20px;
+		height: 20px;
+		border: 1px solid #ececec;
+		border-radius: 2px;
+		background-color: transparent;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+
+	.what-learn .content-learn .item:after {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 4px;
+		width: 12px;
+		height: 6px;
+		margin-top: -4px;
+		border-style: solid;
+		border-color: #8dd64f;
+		border-width: 0 0 2px 2px;
+		-webkit-transform: translate(0, -50%) rotate(-45deg);
+		-ms-transform: translate(0, -50%) rotate(-45deg);
+		-o-transform: translate(0, -50%) rotate(-45deg);
+		transform: translate(0, -50%) rotate(-45deg);
+	}
+
+
+/*----------  Course for  ----------*/
+	.course-for .title-course-for {
+		font-size: 18px;
+		font-weight: 700;
+		text-align: left;
+		color: #28313b;
+	}
+
+	.course-for .content-course-for {
+	    font-size: 16px;
+	    font-weight: 500;
+	    text-align: left;
+	    color: #28313b;
+	    margin-top: 10px;
+	    line-height: 24px;
+	}
+
+/*----------  Requirement  ----------*/
+	.requirement .title-requirement {
+		font-size: 18px;
+		font-weight: 700;
+		text-align: left;
+		color: #28313b;
+	}
+	.requirement .list-requirement {
+		list-style: none;
+		padding-left: 0;
+	}
+	.requirement .list-requirement .item  {
+	    font-size: 16px;
+	    font-weight: 500;
+	    text-align: left;
+	    color: #28313b;
+	    line-height: 1.5;
+	}
+	.requirement .list-requirement .item + .item{
+	    margin-top: 5px;
+	}
+
+	.requirement .list-requirement {
+		margin-bottom: 0;
+		margin-top: 10px;
+	    padding-left: 30px;
+	}
+
+	.requirement .list-requirement .item {
+		position: relative;
+	}
+
+	.requirement .list-requirement .item:before {
+	   	position: absolute;
+	    content: "";
+	    width: 15px;
+	    height: 15px;
+	    border-radius: 50%;
+	    border: 1px solid #333;
+	    left: -30px;
+	    top: 2px;
+	}
+
+	.requirement .list-requirement .item:after {
+	    content: "\f00c";
+	    position: absolute;
+	    left: -28px;
+	    font-family: FontAwesome;
+	    top: -3px;
+	    font-size: 12px;
+	    line-height: 24px;
+	}
+
+/*----------  student story  ----------*/
+	.student-story {
+		border: solid 1px #dadfea;
+		padding: 25px;
+		border-radius: 10px;
+	}
+
+	.student-story .story-title {
+		font-size: 18px;
+		font-weight: 700;
+		text-align: left;
+		color: #28313b;
+	}
+
+	.student-story .story-description {
+		font-size: 16px;
+		font-weight: 500;
+		text-align: left;
+		color: #28313b;
+		margin-top: 20px;
+		line-height: 24px;
+	}
+
+	.student-story .lema-star-rating {
+		margin-top: 5px;
+	}
+
+	.student-story .rating > label:before {
+		margin: 2px;
+	}
+
+	.rating > label {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.student-story .student-info {
+		margin-top: 20px;
+	}
+
+	.student-story .student-info img {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+
+	.student-story .student-info a {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.student-story .detail-info {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+	}
+
+	.student-story .detail-info .student-name {
+		font-style: normal;
+  		color: #333146;
+  		font-weight: 600;
+	}
+
+	.student-story .detail-info .student-name span {
+		font-size: 14px;
+		font-style: italic;
+		text-align: left;
+		color: #6f6e72;
+		font-weight: 500;
+	}
+
+	.student-story .view-more {
+		margin-top: 30px;
+		display: inline-block;
+	}
+
+	.student-story .date {
+		font-size: 14px;
+		text-align: left;
+		color: #6f6e72;
+	}
+
+
+/*----------  Description  ----------*/
+	
+	.section-description .title-description {
+		font-size: 28px;
+		font-weight: bold;
+		letter-spacing: 0.5px;
+		text-align: left;
+		color: #28313b;
+	}
+
+	.section-description .content-descripton {
+		font-size: 18px;
+		line-height: 1.56;
+		text-align: left;
+		color: #233142;
+		margin-top: 20px;
+	}
+
+	/* .show-more-content {
+		color: #333;
+		background-color: #fff;
+		border: none;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		border-radius: 50%;
+		box-shadow: 1px 5px 17px 0 rgba(0, 0, 0, 0.2);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%);
+		-ms-transform: translate(-50%);
+		-o-transform: translate(-50%);
+		transform: translate(-50%);
+	}
+	
+	.show-more-content i {
+		color: #333;
+	    font-size: 30px;
+	    font-weight: 700;
+	    width: 100%;
+	    height: 100%;
+	    line-height: inherit;
+	    display: block;
+	}
+	
+	.lema-view-more .show-more-content {
+		padding: 0;
+	} */
+
+	.section-description {
+		position: relative;
+	}
+
+	.content-descripton {
+		height: 50%;
+		height: 120px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.content-descripton:after {
+		content:"";
+	    position:absolute;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	}
+	/* .lema-view-more .lema-view-more-content {
+		position: relative;
+		overflow: hidden;
+		max-height: 120px;
+		height: auto;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		
+	}
+	.lema-view-more .lema-view-more-content:before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 80px;
+		left: 0;
+		bottom: 0;
+		z-index: 1;
+		pointer-events: none;
+		For browsers that do not support gradients
+		background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+		For Safari 5.1 to 6.0
+		background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+		For Opera 11.1 to 12.0
+		background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+		For Firefox 3.6 to 15
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+		Standard syntax
+	}
+	.lema-view-more{
+		padding-bottom: 50px;
+	}
+	.lema-view-more .lema-view-more-content.show-all {
+		max-height: 500px;
+		overflow: auto;
+	}
+	.lema-view-more .lema-view-more-content.show-all:before{
+		content: none;
+	}
+	.lema-view-more .show-more-content{
+		bottom: 0;
+		top: auto;
+		-webkit-transform: translate(-50%,0);
+		-moz-transform: translate(-50%,0);
+		-ms-transform: translate(-50%,0);
+		-o-transform: translate(-50%,0);
+		transform: translate(-50%,0);
+	}
+	.lema-view-more .show-more-content.active {
+		-webkit-transform: translate(-50%,0) rotate(180deg);
+		-moz-transform: translate(-50%,0) rotate(180deg);
+		-ms-transform: translate(-50%,0) rotate(180deg);
+		-o-transform: translate(-50%,0 rotate(180deg));
+		transform: translate(-50%,0) rotate(180deg);
+	}
+	
+	.lema-view-more .show-more-content:hover,
+	.lema-view-more .show-more-content:focus {
+		background-color: #fff;
+	} */
+
+/*----------  view course  ----------*/
+	.view-course {
+		display: block;
+		width: 100%;
+		font-size: 0;
+	}
+	.view-course .col-4 {
+		width: calc(100% / 3);
+		display: inline-block;
+		vertical-align: top;
+		font-size: 14px;
+	}
+
+	.course-item {
+		padding: 0 15px;
+	}
+
+	.view-course .course-item:first-child {
+		padding-left: 0;
+	}
+
+	
+	.view-course .view-course-title {
+		font-size: 28px;
+		font-weight: bold;
+		text-align: left;
+		color: #28313b;
+		margin-bottom: 30px;
+	}
+
+	.view-course .lema-discount .time-sale {
+		float: none;
+	}
+
+	.view-course .lema-discount {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 15px;
+	}
+
+	.view-course .lema-discount + .lema-discount {
+		margin-left: 20px;
+	}
+
+	.view-course .lema-author {
+		margin-top: 20px;
+	}
+
+	.view-course .footer-course {
+		margin-top: 20px;
+	}
+
+	.view-course .footer-course .lema-star-rating fieldset,
+	.view-course .footer-course .lema-star-rating .view-star,
+	.view-course .footer-course .lema-level-save,
+	.view-course .footer-course .lema-star-rating {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.view-course .footer-course .lema-star-rating fieldset + .view-star {
+		margin-left: 10px;
+	}
+
+	.view-course .footer-course .lema-star-rating + .lema-level-save {
+		margin-left: 15px;
+	}
+
+	.view-course .footer-course .lema-star-rating .view-star {
+		margin-top: 5px;
+	}
+
+	.view-course .footer-course .lema-level-save {
+		margin-top: 7px;
+	}
+
+
+
+
+/*----------  course-sidebar  ----------*/
+	
+
+	.course-sidebar {
+		width: 100%;
+		display: block;
+		margin-bottom: 100px;
+	}
+
+	.course-slidebar-wrapper {
+		border: solid 1px #dadfea;
+	}
+
+
+
+	.course-sidebar .image-course img {
+		width: 100%;
+		height: auto;
+
+	}
+
+	.course-sidebar .time-sale {
+		font-size: 40px;
+		font-weight: bold;
+		letter-spacing: 0.5px;
+		text-align: left;
+		color: #8dd64f;
+		line-height: 1.1;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.course-sidebar .time-sale + .price {
+		margin-left: 15px;
+	}
+
+	.course-sidebar .date-remain {
+		font-size: 14px;
+		text-align: left;
+		color: #d53939;	
+		display: block;
+		margin-top: 10px;
+	}
+
+	.course-sidebar .date-remain i {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 18px;
+	}
+
+	.course-sidebar .date-remain p {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.course-sidebar .content-course {
+		padding: 15px 30px;
+	}
+
+	.course-sidebar .price {
+		font-size: 14px;
+		font-weight: 500;
+		text-align: left;
+		color: #6f6e72;
+		display: inline-block;
+		vertical-align: bottom;
+	}
+
+	.course-sidebar .price span {
+		font-size: 18px;
+		line-height: 1.56;
+		text-align: left;
+		color: #233142;
+	}
+
+	.course-sidebar .enroll-course {
+		margin-top: 10px;
+		display: block;
+		text-align: center;
+	}
+
+	.course-sidebar .enroll-course .lema-btn-cart {
+	    border-radius: 3px;
+	    background-color: #333;
+	    color: #fff;
+	    font-size: 14px;
+	    height: 60px;
+	    line-height: 56px;
+	    padding: 0 30px;
+	    min-width: 250px;
+	    display: inline-block;
+	    border:1px solid #333;
+	    font-weight: 700;
+	}
+	.course-sidebar .enroll-course .lema-course-bookmark {
+		display: block;
+		background-color: #333;
+	    color: #fff;
+	    font-size: 14px;
+	    height: 60px;
+	    line-height: 56px;
+	    padding: 0 30px;
+	    min-width: 250px;
+	    border:1px solid #333;
+	    font-weight: 700;
+	    border-radius: 3px;
+	    -webkit-border-radius: 3px;
+
+	}
+	.course-sidebar .enroll-course .lema-btn-cart i {
+	    font-size: 18px;
+    	margin-right: 10px;
+	}
+
+	.course-sidebar .enroll-course a {
+		border-radius: 3px;
+  		background-color: #333;
+  		color: #fff;
+  		font-size: 14px;
+  		height: 60px;
+  		line-height: 56px;
+  		padding: 0 30px;
+  		min-width: 250px;
+  		display: inline-block;
+  		font-weight: 700;
+	}
+	
+	.course-sidebar .view-student {
+		font-size: 14px;
+		text-align: center;
+		color: #333146;
+		margin-top: 15px;
+		font-weight: 600;
+	}
+
+	.course-sidebar .view-student span {
+		font-weight: 500;
+	}
+
+	.course-sidebar .button-wrapper {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.course-sidebar .button-wrapper a {
+		border-radius: 3px;
+  		border: 2px solid #8dd64f;
+  		color: #8dd64f;
+  		font-size: 16px;
+  		height: 60px;
+  		line-height: 56px;
+  		min-width: 260px;
+  		padding: 0 30px;
+  		display: inline-block;
+  		font-weight: 700;
+	}
+
+	.course-sidebar .button-wrapper a.discuss {
+		color: #333;
+		border-color: #dadfea;
+	}
+	.course-sidebar .button-wrapper a + a {
+		margin-top: 10px;
+	}
+
+
+	/** Hide course image on single detail page **/
+.single-featured-image-header{
+	display: none;
+}
+.site-content{
+	padding-top: 10px;
+}
+
+.preface .lema-rating-simple{
+	text-align: left!important;
+	width: 100%;
+	display: inline-block;
+}
+.preface .lema-rating-simple .lema-star-rating, .preface .lema-rating-simple .lema-number-rating {
+	float: left;
+	width: auto;
+}
+.preface .lema-rating-simple .lema-rating-value{
+	display: none;
+}

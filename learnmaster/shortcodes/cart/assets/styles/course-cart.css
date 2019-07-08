@@ -1,0 +1,150 @@
+/*============================================
+=            Course Cart Dropdown            =
+============================================*/
+/*----------  Cart dropdown  ----------*/
+.lema-cart-dropdown .dropdown-menu {
+  width: 300px;
+  left: 10%;
+  position: absolute;
+  color: #868686;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 3px 15px 20px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 3px 15px 20px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 3;
+  background: white;
+}
+
+.lema-cart-dropdown .dropdown-menu:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #fff transparent;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.lema-cart-dropdown .dropdown-menu > span {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.lema-cart-dropdown .dropdown-menu > span b {
+  margin-right: 5px;
+  color: #333146;
+}
+
+.lema-cart-dropdown .dropdown-menu .cart-list {
+  margin-bottom: 16px;
+}
+
+.lema-cart-dropdown .dropdown-menu .cart-list .item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+  border-bottom: solid 1px #F6F6F6;
+}
+
+.lema-cart-dropdown .dropdown-menu .cart-list .item:before {
+  content: "";
+  display: table;
+}
+
+.lema-cart-dropdown .dropdown-menu .cart-list .item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lema-cart-dropdown .dropdown-menu .cart-list .item .pic {
+  display: block;
+  overflow: hidden;
+  width: 88px;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+
+.lema-cart-dropdown .dropdown-menu .cart-list .item .pic .img-full {
+  width: 100%;
+}
+
+.lema-cart-dropdown .dropdown-menu .cart-list .item .title {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333146;
+  letter-spacing: 0.3px;
+}
+
+.lema-cart-dropdown .dropdown-menu .cart-list .item .title :hover {
+  color: #07d79b;
+}
+
+.lema-cart-dropdown .dropdown-menu .btn-view-cart {
+  display: block;
+  padding: 8px 16px;
+  text-align: center;
+  background-color: #daf9f0;
+  color: #09c199;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.lema-cart-dropdown .dropdown-menu .btn-view-cart:hover {
+  background-color: #09c199;
+  color: #fff;
+}
+
+.lema-cart-dropdown .lema-dropdown-toggle .icon-mycart:before {
+  font-family: 'Ionicons';
+  content: "\f3f8";
+  font-size: 18px;
+  font-style: normal;
+}
+
+/*----------  Dropdown list  ----------*/
+.lema-dropdown {
+  position: relative;
+}
+
+.lema-dropdown.open > .dropdown-menu {
+  display: block;
+}
+
+.lema-dropdown .dropdown-menu {
+  display: none;
+}
+.lema-total-price{
+  margin: 15px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #F44336;
+}
+.block-info .subtotal-item{
+  float:right;
+  font-weight: bold;
+  color:#4CAF50;
+}
+.cart-list a {
+  font-size:12px;
+}
+/*=====  End of Course Cart Dropdown  ======*/

@@ -1,0 +1,60 @@
+.lema-view-add a {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	color: #333146;
+	padding: 4px 20px 0 20px;
+	border-radius: 15px;
+	background-color: #fff;
+	position: relative;
+	font-size: 0;
+	line-height: 20px;
+}
+
+.lema-view-add a:hover {
+	color: #8dd64f;
+}
+.lema-view-add a + a {
+	margin-left: 10px;
+}
+
+.lema-view-add a:before {
+	font-size: 18px;
+	font-family: FontAwesome;
+}
+
+.lema-view-add .view-button:before {
+	content: '\f06e';
+}
+
+.lema-view-add .add-button:before {
+	content: '\f217';
+}
+
+.lema-button-image {
+	position: absolute;
+	top: calc(50% - 15px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.lema-button-image .note-devices {
+	font-family: Montserrat;
+	color: #ffffff;
+	margin-top: 10px;	
+	position: relative;
+}
+
+.lema-button-image .note-devices:before {
+	content: "\f10b";
+	font-family: FontAwesome;
+	font-size: 26px;
+	color: #333146;
+	position: absolute;	
+	top: 30px;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	-o-transform: translate(-50%);
+	transform: translate(-50%);
+}

@@ -1,0 +1,699 @@
+/*========================================
+=            Course Card Info            =
+========================================*/
+
+.course-dashboard .lema-course {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.course-dashboard .lema-course .course-item {
+    padding: 0px;
+}
+
+.course-dashboard .lema-course .course-wrapper {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.course-dashboard .lema-course .course-wrapper:before {
+    content: "";
+    display: table;
+}
+
+.course-dashboard .lema-course .course-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.course-dashboard .lema-course .course-wrapper .course-image-wrapper {
+    width: 30%;
+    float: left;
+    padding: 0px 15px;
+    margin: 0;
+}
+
+.course-dashboard .lema-course .course-wrapper .course-content-wrapper {
+    width: 70%;
+    float: left;
+    padding: 0px 15px;
+    margin: 0;
+}
+
+.course-dashboard .lema-course .title-course {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333146;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.course-dashboard .lema-course .description-course {
+    margin-bottom: 16px;
+    color: #6F6E72;
+}
+
+.course-dashboard .lema-course .lema-author {
+    vertical-align: top;
+}
+
+.course-dashboard .lema-course .lema-author .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.course-dashboard .lema-course .lema-author .author-name {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.course-dashboard .lema-course .lema-rating-st {
+    margin-bottom: 16px;
+}
+
+.course-dashboard .lema-course .lema-rating-st .lema-star-rating {
+    display: inline-block;
+    margin-right: 16px;
+    line-height: 1;
+    position: relative;
+    top: 3px;
+}
+
+.course-dashboard .lema-course .lema-rating-st .rating-desc {
+    display: inline-block;
+    margin-right: 16px;
+    font-size: 16px;
+    color: #6F6E72;
+}
+
+.course-dashboard .lema-course .lema-rating-st .rating-desc strong {
+    color: #333146;
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+.course-dashboard .lema-course .lema-rating-st > .lema-link {
+    display: inline-block;
+    color: #0085BA;
+    text-transform: uppercase;
+}
+
+.course-dashboard .lema-course .lema-rating-st > .lema-link:hover {
+    color: #333146;
+}
+
+.course-dashboard .lema-course .continue-lesson {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.lema-lesson-progress {
+    margin-bottom: 16px;
+}
+
+.lema-lesson-progress .lema-progress-bar {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 8px;
+    background-color: #DDDDDD;
+    margin-bottom: 8px;
+}
+
+.lema-lesson-progress .lema-progress-bar .lema-progress-percent {
+    height: 100%;
+    background-color: #0085BA;
+}
+
+.lema-lesson-progress .progress-description {
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333146;
+}
+
+.lema-lesson-progress .progress-description span {
+    color: #0085BA;
+}
+
+.lema-lesson-progress > .reset-lesson {
+    text-transform: uppercase;
+    color: #333146;
+    font-weight: 700;
+    float: right;
+}
+
+.lema-lesson-progress > .reset-lesson:hover {
+    color: #0085BA;
+}
+
+/*=====  End of Course Card Info  ======*/
+
+/*=======================================
+=            Announcements list            =
+=======================================*/
+
+.lema-announcements-list {
+    margin-bottom: 0;
+}
+
+.lema-announcements-list .announcements-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #DDDDDD;
+    position: relative;
+}
+
+.lema-announcements-list .announcements-item:before {
+    content: "";
+    display: table;
+}
+
+.lema-announcements-list .announcements-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lema-announcements-list .announcements-item > .avatar {
+    width: 40px;
+    float: left;
+}
+
+.lema-announcements-list .announcements-item > .avatar img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.lema-announcements-list .announcements-item > .lema-desc {
+    width: 90%;
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+    padding-left: 16px;
+    float: left;
+}
+
+.lema-announcements-list .announcements-item:last-child {
+    border-bottom: none;
+}
+
+/*=====  End of Announcements list  ======*/
+
+/*=============================================
+=            Course Dashboard Page            =
+=============================================*/
+
+.course-dashboard .info-list {
+    margin-bottom: 40px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.course-dashboard .info-list:before {
+    content: "";
+    display: table;
+}
+
+.course-dashboard .info-list:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.course-dashboard .info-list > .info-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 33.3333%;
+    float: left;
+    position: relative;
+    margin-bottom: 8px;
+
+}
+
+.course-dashboard .info-list > .info-item label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.course-dashboard .lema-course-description {
+
+}
+
+.course-dashboard .lema-curriculum-list .lema-chapter-heading {
+    background-color: #F6F6F6;
+}
+
+.course-dashboard .lema-curriculum-list .lema-curriculum-chapter {
+    margin-bottom: 8px;
+}
+
+.course-dashboard .curriculum-list-wrapper .top-bar {
+    margin-bottom: 32px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.course-dashboard .curriculum-list-wrapper .top-bar:before {
+    content: "";
+    display: table;
+}
+
+.course-dashboard .curriculum-list-wrapper .top-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.course-dashboard .curriculum-list-wrapper .top-bar .col-left,
+.course-dashboard .curriculum-list-wrapper .top-bar .col-right {
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    width: 50%;
+}
+
+.course-dashboard .curriculum-list-wrapper .top-bar .col-right {
+    text-align: right;
+}
+
+.course-dashboard .curriculum-list-wrapper .top-bar .lema-form-group {
+    display: inline-block;
+    width: 230px;
+    position: relative;
+
+}
+
+.course-dashboard .curriculum-list-wrapper .top-bar .lema-form-group .button-search {
+    position: absolute;
+    font-size: 0;
+    top: 0;
+    right: 0;
+    padding: 6px 12px;
+}
+
+.course-dashboard .curriculum-list-wrapper .top-bar .lema-form-group .button-search:before {
+    content: "\f002";
+    font-size: 14px;
+    font-family: "FontAwesome";
+}
+
+.course-dashboard .curriculum-list-wrapper .top-bar .col-right label,
+.course-dashboard .curriculum-list-wrapper .top-bar .col-right .lema-form-control {
+    display: inline-block;
+    width: auto;
+}
+
+.course-dashboard .curriculum-list-wrapper .top-bar .col-right label {
+    margin-right: 8px;
+    font-weight: 400;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-chapter-heading {
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-curriculum-chapter .lema-curriculum-body {
+    display: block;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-chapter-heading .lm-main {
+    padding-right: 0px;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-chapter-heading .lema-index {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-chapter-heading .lema-chapter-title {
+    padding-top: 0px;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-curriculum-body {
+    padding: 8px 50px;
+    border-bottom: none;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-curriculum-lesson:hover {
+    background-color: transparent;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-curriculum-lesson {
+    border-bottom: 1px solid #F9F9F9;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-curriculum-lesson:last-child {
+    border-bottom: none;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-curriculum-lesson .lema-lesson-heading {
+    padding: 0px;
+    margin-bottom: 8px;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-curriculum-lesson .lema-lesson-heading . {
+    font-weight: 500;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-list .lema-curriculum-lesson .lema-lesson-heading .lema-index {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.lema-bookmark-wrapper .lema-curriculum-lesson .lema-lesson-heading .lema-lesson-title {
+    display: inline-block;
+}
+
+.lema-bookmark-wrapper .lema-bookmarks-list .bookmark-item {
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.lema-bookmark-wrapper .lema-bookmarks-list .bookmark-item:hover {
+    background-color: #F6F6F6;
+}
+
+.lema-bookmark-wrapper .lema-bookmarks-list .bookmark-item .time {
+    font-weight: 600;
+    color: #333;
+    margin-right: 10px;
+}
+
+/*=====  End of Course Dashboard Page  ======*/
+
+/*=========================================
+=            Announcement Tabs            =
+=========================================*/
+
+.lema-announcements-list .lema-announcements-item {
+    margin-bottom: 40px;
+    background-color: #f6f6f6;
+    padding: 32px 40px;
+}
+
+.lema-announcements-item .heading-top {
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.lema-announcements-item .heading-top .avatar {
+    width: 60px;
+    float: left;
+}
+
+.lema-announcements-item .heading-top .avatar img {
+    border-radius: 50%;
+}
+
+.lema-announcements-item .heading-top .meta {
+    display: block;
+    clear: none;
+    width: 80%;
+    width: calc(100% - 60px);
+    padding-left: 20px;
+    padding-top: 0px;
+    float: left;
+}
+
+.lema-announcements-item .heading-top .announcement-name {
+    padding: 0;
+    margin: 0;
+}
+
+.lema-announcements-item .heading-top .info {
+    display: block;
+}
+
+.lema-announcements-item .announcement-body {
+    margin-bottom: 32px;
+}
+
+.lema-announcements-item .announcement-body .announcement-title {
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #28313b;
+}
+
+.announcement-comments .comment-box {
+    margin-bottom: 32px;
+}
+
+.announcement-comments .comment-box .lema-form-group {
+    margin: 0;
+    position: relative;
+}
+
+.announcement-comments .comment-box .lema-form-control {
+    max-width: 80%;
+    max-width: -webkit-calc(100% - 175px);
+    max-width: calc(100% - 175px);
+    width: 80%;
+    width: -webkit-calc(100% - 175px);
+    width: calc(100% - 175px);
+    min-height: 50px;
+    height: auto;
+
+}
+
+.announcement-comments .comment-box .button-submit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.announcement-comments .show-all-comments {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.announcement-comments .comments-list .comment {
+    border-bottom: 1px solid #DDDDDD;
+    padding: 16px 0;
+}
+
+.announcement-comments .comments-list .comment:last-child {
+    border-bottom: none;
+}
+
+.announcement-comments .comments-list .comment:before {
+    content: "";
+    display: table;
+}
+
+.announcement-comments .comments-list .comment:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.announcement-comments .comments-list .comment .avatar {
+    width: 60px;
+    float: left;
+
+}
+
+.announcement-comments .comments-list .comment .avatar img {
+    border-radius: 100%;
+}
+
+.announcement-comments .comments-list .comment .comment-text {
+    width: calc(100% - 60px);
+    width: -webkit-calc(100% - 60px);
+    padding-left: 20px;
+    float: left;
+}
+
+.announcement-comments .comments-list .comment .meta {
+    margin-bottom: 8px;
+}
+
+.announcement-comments .comments-list .comment .user-name {
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+/*=====  End of Announcement Tabs  ======*/
+
+/*===============================
+=            QA Tab             =
+===============================*/
+
+.lema-qa-wrapper .top-bar {
+    margin-bottom: 32px;
+    padding: 32px 16px;
+    background-color: #F6F6F6;
+}
+
+.lema-qa-wrapper .top-bar:before {
+    content: "";
+    display: table;
+}
+
+.lema-qa-wrapper .top-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lema-qa-wrapper .top-bar > .lema-form-group,
+.lema-qa-wrapper .top-bar > .text,
+.lema-qa-wrapper .top-bar > .tb-cell {
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.lema-qa-wrapper .top-bar > .lema-form-group {
+    width: 70%;
+    position: relative;
+
+}
+
+.lema-qa-wrapper .top-bar > .lema-form-group .lema-form-control {
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+}
+
+.lema-qa-wrapper .top-bar > .lema-form-group .button {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 0;
+    padding: 6px 12px;
+}
+
+.lema-qa-wrapper .top-bar > .lema-form-group .button i {
+    font-size: 14px;
+    line-height: inherit;
+}
+
+.lema-qa-wrapper .top-bar > .text {
+    width: 50px;
+    text-align: center;
+}
+
+.lema-qa-wrapper .top-bar > .tb-cell {
+    width: 28%;
+    width: -webkit-calc(30% - 50px);
+    width: calc(30% - 50px);
+    float: right;
+    text-align: right;
+}
+
+.lema-qa-wrapper .top-bar > .tb-cell .button {
+    display: block;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.lema-qa-wrapper .lema-table caption {
+    padding: 18px 16px;
+    background-color: #F6F6F6;
+    text-align: left;
+    font-weight: 700;
+}
+
+/*=====  End of QA Tab   ======*/
+
+/*FIX*/
+.course-dashboard .lema-course .lema-item-right {
+    padding: 5px 30px;
+}
+
+.course-dashboard .lema-course .lema-item-left .course-image-wrapper img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.course-dashboard .layout-2 .lema-row .instructor-block {
+    position: initial;
+}
+
+.course-dashboard .lema-course .instructor-block .lema-author span {
+    vertical-align: top;
+    font-size: 20px;
+    margin-top: 5px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.course-dashboard .lema-row {
+    margin-left: 5px;
+}
+
+.course-dashboard .rating-block {
+    position: absolute;
+}
+
+.course-dashboard .lema-star-rating, .course-dashboard .lema-rating-value,
+.course-dashboard .lema-number-rating, .course-dashboard .poop {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.course-dashboard .poop {
+    color: #0085BA;
+    font-size: 20px;
+}
+
+.course-dashboard .poop:hover {
+    color: #333146;
+}
+
+.course-dashboard .lema-lesson-progress {
+    margin-top: 50px;
+}
+
+.course-dashboard .layout-2.course-item .lema-item-left .course-image-wrapper img {
+    height: auto;
+}
+
+.course-dashboard .lema-curriculum-lesson .lema-lesson-title a:hover, .course-dashboard .lema-chapter-title {
+    color: #0085BA;
+}
+
+.course-dashboard .img-responsive.img-full {
+    max-height: 200px;
+}
+
+.course-unqualifield {
+    text-align: center;
+}
+
+.course-unqualifield .return-to-home {
+    width: 190px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    background-color: #07d79b;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    vertical-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}

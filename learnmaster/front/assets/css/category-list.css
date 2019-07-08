@@ -1,0 +1,110 @@
+.lema-course-list .course-image-wrapper {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.lema-course-list .course-content-wrapper {
+	width: 60%;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	padding: 15px 20px;
+} 
+
+.lema-course-list .course-wrapper {
+	font-size: 0;
+	width: 100%;
+}
+
+.lema-course-list .lema-course .course-image-wrapper img {
+	width: 370px;
+	height: 250px;
+	border-radius: 8px 0 0 8px;
+}
+
+.lema-course-list .item + .item {
+	margin-top: 30px;
+}
+
+.lema-course-all.lema-course-list {
+	margin: 0;
+}
+
+.lema-course-list .lema-discount .time-sale {
+	float: none;
+}
+
+.lema-course-list .lema-level-save li:before {
+	margin-right: 0;
+}
+
+.lema-course-list .lema-level-save li {
+	float: right;
+}
+
+.lema-course-list .lema-discount .time-sale del {
+    font-size: 14px;
+    text-align: left;
+    color: #6f6e72;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.lema-course-list .title-course {
+	margin-bottom: 10px;
+}
+
+.lema-course-list .item {
+	box-shadow: 2px 3px 14px 0 rgba(149, 149, 149, 0.44);
+	border-radius: 8px;
+}
+
+.lema-course-list .time-sale {
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: #8dd64f;
+}
+
+.lema-course-list .time-sale del {
+	font-size: 14px;
+	text-align: left;
+	color: #6f6e72;
+}
+
+.lema-course-list .lema-course .course-item {
+	padding: 0;
+}
+
+.lema-course-list .lema-discount {
+	margin-top: 30px;
+}
+
+.lema-course-list .lema-star-rating {
+	margin-top: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.lema-course-list .lema-level-save {
+	display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    float: right;
+}
+
+.lema-course-list .lema-star-rating .icon-star {
+	vertical-align: top;
+	display: inline-block;
+}
+
+.lema-course-list .lema-star-rating .view-star {
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 5px;
+    margin-left: 10px;
+}
+

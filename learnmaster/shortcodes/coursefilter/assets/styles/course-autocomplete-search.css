@@ -1,0 +1,123 @@
+/*==================================================
+=            Course Autocomplete search            =
+==================================================*/
+
+.lema-autocomplete-search {
+  position: relative;
+}
+
+.lema-autocomplete-search .form-group input {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  border-radius: 3px;
+  border: 1px solid #F6F6F6;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.lema-autocomplete-search .form-group input:focus {
+  box-shadow: 0 0 8px rgba(141, 214, 79, 0.6);
+}
+
+.lema-autocomplete-search .form-group .btn-search {
+  position: absolute;
+  border: 1px solid #8DD64F;
+  background-color: #8DD64F;
+  color: #FFFFFF;
+  left: 0;
+  height: 34px;
+  border-radius: 3px;
+  top: 0;
+}
+
+.lema-autocomplete-search.btn-text .form-group input {
+  padding-left: 60px;
+}
+
+.lema-autocomplete-search.btn-icon .form-group input {
+  padding-left: 50px;
+}
+
+.lema-autocomplete-search.btn-icon .form-group .btn-search {
+  font-size: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.lema-autocomplete-search.btn-icon .form-group .btn-search .icons-search:before {
+  content: "\f002";
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  font-style: normal;
+}
+
+.lema-autocomplete .ui-autocomplete {
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 3px 15px 20px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px #F6F6F6;
+  background: #FFFFFF;
+}
+
+.lema-autocomplete .ui-autocomplete .ui-menu-item {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #333146;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  position: relative;
+}
+
+.lema-autocomplete .ui-autocomplete .ui-menu-item:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #8DD64F;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.lema-autocomplete .ui-autocomplete .ui-menu-item.ui-state-focus {
+  border: none;
+  color: #8DD64F;
+  font-weight: 600;
+  background: #f6f6f6;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #f6f6f6);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), #f6f6f6);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #f6f6f6);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #f6f6f6);
+  /* Standard syntax */
+}
+
+.lema-autocomplete .ui-autocomplete .ui-menu-item.ui-state-focus:before {
+  opacity: 1;
+}
+
+/*=====  End of Course Autocomplete search  ======*/

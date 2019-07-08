@@ -1,0 +1,73 @@
+.page-card-content {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 1000px;
+}
+
+.lemn-cart-table .quantity {
+	position: relative;
+	width: 100%;
+	top: -20px;
+}
+.lemn-cart-table .quantity input {
+	text-align: center;
+	position: absolute;
+}
+.lemn-cart-table .quantity .quantity-sub::before{
+	content: "-";
+	background-color: #333;
+	color: #b7b7b7;
+	padding: 10px;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	z-index: 2;
+}
+
+.lemn-cart-table .quantity .quantity-add::after{
+	content: "+";
+	background-color: #333;
+	color: #b7b7b7;
+	padding: 10px;
+	cursor: pointer;
+	right: 0;
+	position: absolute;
+	z-index: 2;
+}
+
+.lemn-cart-table .quantity .quantity-add:hover::after, .lemn-cart-table .quantity .quantity-add:hover::before {
+	color: #fff;
+}
+
+.lemn-cart-table .product-thumbnail {
+	width: 20%;
+}
+
+.lemn-cart-table .product-name {
+	width: 30%;
+}
+.lemn-cart-table th, .lemn-cart-table tr {
+	text-align: center;
+}
+
+a.lema-btn {
+	padding: 10px 10px;
+	background-color: #333;
+	color: #b7b7b7;
+	border-radius: 2px;
+}
+
+.lema-update-cart a.lema-btn:hover {
+	color: #fff;
+}
+
+.lema-block-checkout {
+	margin-top: 50px;
+	text-align: right;
+}
+
+.lema-block-checkout li {
+	list-style: none;
+}

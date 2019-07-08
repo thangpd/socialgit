@@ -1,0 +1,209 @@
+/*=================================
+=            My Course            =
+=================================*/
+
+	.wrapper-heading {
+		position: relative;
+		width: 100%;
+		display: table;
+	}
+
+	.wrapper-heading .heading-title,
+	.wrapper-heading .heading-button,
+	.wrapper-heading .searching-area,
+	.wrapper-heading .filtering-area {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.heading-title {
+		font-family: "Montserrat", sans-serif;
+		font-size: 35px;
+		font-weight: 700;
+		letter-spacing: 0.5;
+	}
+
+	/* SC Counter */
+	.lema-base-counter .wrapper-base-content {
+	    padding: 30px 15px 0 15px;
+	    background: #f6f6f6;
+	}
+
+	.lema-base-counter .wrapper-base-content .item-base .sub-title {
+		font-family: "Lato", sans-serif;
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		color: #28113b;
+	}
+
+	.lema-base-counter .wrapper-base-content .item-base .count-number {
+		font-family: "Montserrat", sans-serif;
+		font-size: 36px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		color: #28113b;
+	}
+
+	.lema-base-counter .wrapper-base-content .item-base .flag-wrapper {
+		margin: 20px 0;
+	}
+
+	.lema-base-counter .wrapper-base-content .item-base .flag-wrapper .item-flag {
+		position: relative;
+		width: 28px;
+		height: 20px;
+		overflow: hidden;
+		display: inline-block;
+		vertical-align: top;
+		line-height: 0;
+	}
+
+	.lema-base-counter .wrapper-base-content .item-base .flag-wrapper .item-flag:before {
+		content: "";
+		padding-top: 71%;
+		display: block;
+	}
+
+	.lema-base-counter .wrapper-base-content .item-base .flag-wrapper .item-flag img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: auto;
+		max-width: none;
+		height: 100%;
+		border-radius: 3px;
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+	}
+
+	.lema-base-counter .wrapper-base-content .item-base .flag-wrapper .item-flag + .item-flag {
+		margin-left: 5px;
+	}
+
+/* End of SC Counter */
+
+
+/*===============================
+=            Profile            =
+===============================*/
+
+	.searching-area {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.searching-area .button-area {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		padding: 6px 12px;
+		font-size: 0;
+		-webkit-transform: translate(0,-50%);
+		-moz-transform: translate(0,-50%);
+		-o-transform: translate(0,-50%);
+		-ms-transform: translate(0,-50%);
+		transform: translate(0,-50%);
+	}
+	
+	.searching-area .icons {
+		padding: 3px 12px;
+		font-size: 15px;
+	}
+
+	.filtering-area .name,
+	.filtering-area .option {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.filtering-area .name {
+		margin: 0 10px 0 0;
+	}
+
+	.filtering-area .option {
+		height: 34px;
+	}
+
+
+/*=====  End of Profile  ======*/
+
+
+/*========================================
+=            Purchase History            =
+========================================*/
+
+	.lema-custom-table thead{
+		background-color: #f6f6f6;
+	}
+
+	.lema-custom-table tbody > tr > td {
+		padding: 16px 0;
+	}
+
+/*=====  End of Purchase History  ======*/
+
+/*===============================
+=            Receipt            =
+===============================*/
+
+	.receipt-date {
+		font-family: Montserrat;
+	  	font-size: 18px;
+	  	font-weight: 700;
+	  	line-height: 1.5;
+	  	letter-spacing: 0.5px;
+	}
+	
+	.receipt-infor .block-infor {
+		display: inline-block;
+		vertical-align: top;
+		width: calc(50% - 15px);
+	}
+
+	.receipt-infor .block-infor + .block-infor {
+		margin-bottom: 30px;
+	}
+
+	.receipt-infor .block-infor address,
+	.receipt-infor .block-infor p {
+		margin: 0;
+	}
+
+	.receipt-infor .block-infor .name {
+		font-family: Montserrat;
+		font-weight: 500;
+	}
+
+	.receipt-infor .block-infor .date,
+	.receipt-infor .block-infor .invoice-number {
+		display: inline-block;
+		min-width: 150px;
+	}
+
+
+/*=====  End of Receipt  ======*/
+
+
+
+
+/** Customization **/
+.lema-course-select-list {
+	min-width: 250px;
+}
+
+.instructor-rating{
+	width: 100%;
+	display: inline-block;
+	clear: both;
+}
+.instructor-rating .lema-rating-simple{
+	width: 200px;
+	text-align: left;
+}
+.instructor-rating .lema-rating-simple .lema-star-rating, .instructor-rating .lema-rating-simple .rate-info {
+	float: left;
+}

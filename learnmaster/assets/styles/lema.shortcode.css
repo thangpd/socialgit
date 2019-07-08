@@ -1,0 +1,523 @@
+/*=====================================
+=            General Style            =
+=====================================*/
+.lema-content-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.lema-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.lema-btn:hover,
+.lema-btn:active {
+  outline: none;
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+
+.lema-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lema-form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.lema-form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/*----------  Dropdown list  ----------*/
+.lema-dropdown {
+  position: relative;
+}
+
+.lema-dropdown.open > .dropdown-menu {
+  display: block;
+}
+
+.lema-dropdown .dropdown-menu {
+  display: none;
+}
+
+/*=====  End of General Style  ======*/
+/*==========================================
+=            Quick Course Start            =
+==========================================*/
+.lema-mycourse-dropdown {
+  color: #6F6E72;
+}
+
+.lema-mycourse-dropdown .dropdown-menu {
+  width: 220px;
+  border-radius: 4px;
+  box-shadow: 3px 15px 20px 0 rgba(0, 0, 0, 0.05);
+  background-color: #FFFFFF;
+  color: #6F6E72;
+  padding: 10px;
+}
+
+.lema-mycourse-dropdown .course-dropdown-list a {
+  color: #333146;
+}
+
+.lema-mycourse-dropdown .course-dropdown-list a:hover {
+  color: #8DD64F;
+}
+
+.lema-mycourse-dropdown .course-dropdown-list .top-title {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  padding: 0px 0px 10px;
+  border-bottom: 1px solid #F6F6F6;
+}
+
+.lema-mycourse-dropdown .course-dropdown-list .item {
+  padding: 8px 0;
+  border-bottom: 1px solid #F6F6F6;
+}
+
+.lema-mycourse-dropdown .course-dropdown-list .item:before {
+  content: "";
+  display: table;
+}
+
+.lema-mycourse-dropdown .course-dropdown-list .item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lema-mycourse-dropdown .course-dropdown-list .item .pic {
+  width: 60px;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+
+.lema-mycourse-dropdown .course-dropdown-list .item .pic img {
+  width: 100%;
+}
+
+.lema-mycourse-dropdown .course-dropdown-list .item .title {
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.lema-mycourse-dropdown .align-item {
+  text-align: right;
+}
+
+.lema-mycourse-dropdown .align-item .see-more {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #333146;
+}
+
+.lema-mycourse-dropdown .align-item .see-more:hover {
+  color: #8DD64F;
+}
+
+/*=====  End of Quick Course Start  ======*/
+
+/*=============================================
+=            Section comment block            =
+=============================================*/
+.lema-curriculum .heading-title {
+  margin-bottom: 24px;
+}
+
+.lema-curriculum .heading-title:before {
+  content: "";
+  display: table;
+}
+
+.lema-curriculum .heading-title:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lema-curriculum .heading-title .title {
+  text-align: left;
+  display: inline-block;
+  float: left;
+  margin-top: 0px;
+}
+
+.lema-curriculum .heading-title .right-title {
+  float: right;
+}
+
+.lema-curriculum .heading-title .link-expandall {
+  text-transform: uppercase;
+  color: #8DD64F;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.lema-curriculum .heading-title .total-lesson,
+.lema-curriculum .heading-title .total-time {
+  font-size: 14px;
+  color: #6F6E72;
+  display: inline-block;
+}
+
+.lema-curriculum .heading-title .total-lesson {
+  margin-right: 16px;
+}
+
+.le-curriculum-accordion .lema-chapter-heading {
+  border-bottom: 1px solid #F6F6F6;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.le-curriculum-accordion .lema-chapter-heading .chapter-title {
+  margin: 0;
+  font-weight: inherit;
+}
+
+.le-curriculum-accordion .lema-chapter-heading:after {
+  position: absolute;
+  content: "\f218";
+  right: 20px;
+  top: 50%;
+  line-height: 1;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.le-curriculum-accordion .lema-chapter-heading.open:after {
+  content: "\f209";
+}
+
+.le-curriculum-accordion > .lema-acc-body {
+  padding: 8px 20px 8px;
+  display: none;
+}
+
+.le-curriculum-accordion > .lema-acc-body .lema-acc-body {
+  border-bottom: 1px solid #F6F6F6;
+}
+
+.le-curriculum-accordion > .lema-acc-body .lema-acc-body:last-child {
+  border-bottom: none;
+}
+
+.le-curriculum-accordion .lema-lesson-heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.le-curriculum-accordion .lema-lesson-heading:before {
+  content: "";
+  display: table;
+}
+
+.le-curriculum-accordion .lema-lesson-heading:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.le-curriculum-accordion .lema-lesson-heading .lema-heading {
+  display: inline-block;
+  width: 25px;
+  cursor: pointer;
+}
+.le-curriculum-accordion .lema-lesson-heading.lema-heading:before {
+  font-family: "FontAwesome";
+  content: "\f105";
+}
+
+.le-curriculum-accordion .lema-lesson-heading.lema-heading.open:before {
+  content: "\f107";
+}
+.le-curriculum-accordion .lema-lesson-heading .lesson-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+  display: inline-block;
+}
+
+.le-curriculum-accordion .lema-lesson-heading .preview-link {
+  float: right;
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: #8DD64F;
+}
+
+.le-curriculum-accordion .lema-lesson-heading .preview-link:hover {
+  color: #333146;
+}
+
+.le-curriculum-accordion .lema-lesson-heading .duration {
+  display: inline-block;
+  float: right;
+}
+
+.le-curriculum-accordion .lema-acc-body {
+  display: none;
+  padding: 8px 16px;
+}
+
+.le-curriculum-accordion .lesson-item {
+  padding: 8px 0px;
+  border-bottom: 1px solid #F6F6F6;
+}
+
+/*=====  End of Section comment block  ======*/
+/*======================================
+=            Style Homepage            =
+======================================*/
+.lema-page-content.lema-course-homepage .padding-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.lema-page-content.lema-course-homepage .padding-section .lema-course-list > .lema-title {
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+/*=====  End of Style Homepage  ======*/
+/*==================================
+=            RESPONSIVE            =
+==================================*/
+@media screen and (max-width: 1024px) {
+  .lema-columns.lema-column-6 > .item,
+  .lema-columns.lema-column-5 > .item {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .lema-columns.lema-column-6 > .item,
+  .lema-columns.lema-column-5 > .item,
+  .lema-columns.lema-column-4 > .item {
+    width: 33.33333333333333%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lema-columns.lema-column-6 > .item,
+  .lema-columns.lema-column-5 > .item,
+  .lema-columns.lema-column-4 > .item,
+  .lema-columns.lema-column-3 > .item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .lema-columns.lema-column-6 > .item,
+  .lema-columns.lema-column-5 > .item,
+  .lema-columns.lema-column-4 > .item,
+  .lema-columns.lema-column-3 > .item,
+  .lema-columns.lema-column-2 > .item {
+    width: 100%;
+  }
+}
+
+/*=====  End of RESPONSIVE  ======*/
+
+
+.lema-page-advanced-search {
+  width: 100%;
+}
+
+.lema-page-advanced-search .lema-course-filter-right {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  width: 70%;
+  padding-left: 40px;
+}
+
+.lema-page-advanced-search .widget-title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #28313b;
+}
+
+.lema-page-advanced-search .widget-content span{
+  font-size: 14px;
+  text-align: left;
+  color: #4a4a4a;
+  font-weight: 400;
+}
+
+.lema-page-advanced-search .widget-content label {
+  display: block;
+}
+
+.lema-page-advanced-search .widget-content {
+  margin-top: 20px;
+}
+
+.lema-page-advanced-search .button-view a {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #8dd64f;
+}
+
+.lema-page-advanced-search .button-view {
+  margin-top: 10px;
+}
+
+.lema-page-advanced-search label input {
+  display: none;
+}
+
+.lema-page-advanced-search .widget-content label span.text {
+  position: relative;
+  padding-left: 35px;
+}
+.lema-page-advanced-search .widget-content label span.number {
+  float: right;
+}
+
+.lema-page-advanced-search .widget-content label span.text:before {
+  position: absolute;
+  content: "";
+  top: auto;
+  left: 0;
+  bottom: 1px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ececec;
+  border-radius: 2px;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.lema-page-advanced-search .widget-content label span.text:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 12px;
+  height: 6px;
+  margin-top: -4px;
+  border-style: solid;
+  border-color: #8dd64f;
+  border-width: 0 0 2px 2px;
+  -webkit-transform: translate(0, -50%) rotate(-45deg);
+  -ms-transform: translate(0, -50%) rotate(-45deg);
+  -o-transform: translate(0, -50%) rotate(-45deg);
+  transform: translate(0, -50%) rotate(-45deg);
+  opacity: 0;
+}
+
+.lema-page-advanced-search .widget-content label input[type="checkbox"]:checked + span.text:after {
+  opacity: 1;
+}
+
+.lema-page-advanced-search .lema-widget + .lema-widget {
+  margin-top: 50px;
+}
+.button-wrapper{
+  width: 100%;
+  padding: 10px 50px;
+  text-align: center;
+  background: #f1f1f1;
+  border-top: 1px solid #e6e6e6;
+}
+.lema-page-advanced-search .button-wrapper a,.lema-page-advanced-search .button-wrapper button {
+  background-color: #8dd64f;
+  background-color: #000000;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 230px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 3px;
+  margin-top:10px;
+}
+
+.lema-page-advanced-search .title-advanced-search {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: left;
+  padding: 15px 50px;
+  width: 100%;
+  background: #f1f1f1;
+  border-bottom: 1px solid #e6e6e6;
+  color: #28313b;
+  display: inline-block;
+}
+
+.lema-page-advanced-search .title-advanced-search + .advanced-search-wrapper {
+  margin-top: 50px;
+}
+
+.lema-page-advanced-search .lema-columns {
+  margin-left: 0;
+  margin-right: 0;
+}
